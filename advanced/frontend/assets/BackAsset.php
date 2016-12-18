@@ -19,6 +19,7 @@ class BackAsset extends AssetBundle
         '/js/jquery-ui.min.css'
     ];
     public $js = ['js/events-handler.js',
-        '/js/jquery-ui.min.js'
+        '/js/jquery-ui.min.js',
+        'js/ajax-modal-popup.js'
     ];
 }

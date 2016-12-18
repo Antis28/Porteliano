@@ -1,7 +1,7 @@
 $("#button-toggle").click(function(){
-	$('ul#w17').slideToggle(200);
+	$('ul.navbar.navbar-nav').slideToggle(200);
 });
 
-$('ul#w17 > li').delegate('a', 'click', function(){
-	$('ul#w17').slideToggle(100);
+$('ul.navbar.navbar-nav > li').delegate('a', 'click', function(){
+	$('ul.navbar.navbar-nav').slideToggle(100);
 });

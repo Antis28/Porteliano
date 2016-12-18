@@ -3,11 +3,12 @@
  */
 $(function(){
     $(document).on('click', '.showModalButton', function(){
+        console.log('click');
         $('#modalContent').load($(this).attr('value'));
         //dynamiclly set the header for the modal
         $('#modalHeader').find('h2').text(
             $(this).attr('title')
-        );  
+        );
     });
 });
 $(function(){

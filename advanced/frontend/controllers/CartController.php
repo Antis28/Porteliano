@@ -9,6 +9,7 @@
 namespace frontend\controllers;
 
 use app\models\Cart;
+use common\models\User;
 use frontend\models\Order;
 use app\models\Wish;
 use app\models\Customer;
@@ -171,7 +172,7 @@ class CartController extends Controller
                     Yii::$app->mailer->compose('orderAdmin', ['cart' => $session['cart'],
                         'modelOrder' => $modelOrder,])
                         ->setFrom('porteliano@mail.ru')
-                        ->setTo('kefir266@gmail.com')
+                        ->setTo(User::findByUsername('admin')->email)
                         ->setSubject('Заказ ' . $modelOrder->id)
                         ->send();
 

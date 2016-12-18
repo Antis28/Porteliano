@@ -6,8 +6,6 @@
  * Time: 17:05
  */
 /* @var $this yii\web\View */
-
-/* @var $manufacturer \frontend\models\Manufacturer */
 /*  models  */
 
 /*  widgets  */
@@ -24,8 +22,8 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
 <div class="wrap-contacts switch" data-swith="contact">
 
     <div class="row-contact">
-        <div class="row">
-            <div class="col-md-6 .col-sm-4 col-xs-12 ">
+        <div class="row center-block">
+            <div class="col-md-6 .col-sm-4 padding-clear">
                 <h2>Контакты</h2>
                 <div class="row orange">
                     <div class="col-md-12 .col-sm-12 col-xs-12">
@@ -69,7 +67,7 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
                 </div>
                 <div class="row indent">
                     <div class="col-md-12 .col-sm-12 col-xs-12">
-                        +7 (495) 742-17-24
+                        absolute@ak-in.ru
                     </div>
                 </div>
             </div>
@@ -80,11 +78,27 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
         </div>
     </div>
     <div class="map">
+
         <script type="text/javascript" charset="utf-8" async
-                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-zt7pyu1ot07ORrKltN3hhhNxShJKgs-&amp;width=-1&amp;height=800&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-zt7pyu1ot07ORrKltN3hhhNxShJKgs-&amp;width=-1&amp;height=800&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+        </script>
         <div class="forma">
-            <? require Yii::getAlias('@frontend') . '/views/site/home/contact-form.php' ?>
+            <?// require Yii::getAlias('@frontend') . '/views/site/home/contact-form.php' ?>
+            <? require Yii::getAlias('@frontend') . '/views/pages/contact-question-form.php' ?>
         </div>
+        <script>
+            /*
+            $(function () {
+                $('.ymaps-2-1-45-ground-pane').css({
+                    'top'   : '-150px',
+                    'left'  : '0px',
+                    'position': 'absolute',
+                    'z-index'   : '701'
+
+                });
+            });
+            */
+        </script>
     </div>
 </div>
 

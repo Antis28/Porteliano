@@ -167,7 +167,10 @@ header > div {
 
 /*******  button *********************/
 #ask_a_question-button {
-    font-family: PTSansBold, sans-serif;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10.5pt; /* -1/4 от 14pt в photoShop*/
     padding: 10px 20px 10px 20px;
 
     border-radius: 20px;

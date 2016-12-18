@@ -35,17 +35,12 @@ $sectionUrls = [
     ],
     ['/catalog',
         'section' => '3',
-        'material' => '3',
+        'material' => '5',
 
     ],
     ['/catalog',
         'section' => '3',
-        'material' => '1',
-
-    ],
-    ['/catalog',
-        'section' => '3',
-        'material' => '3',
+        'style' => '4',
 
     ],
     ['/catalog',
@@ -56,6 +51,11 @@ $sectionUrls = [
     ['/catalog',
         'section' => '3',
         'material' => '1',
+
+    ],
+    ['/catalog',
+        'section' => '5',
+
 
     ],
     [],

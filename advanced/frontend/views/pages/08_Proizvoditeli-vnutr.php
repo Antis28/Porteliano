@@ -7,7 +7,7 @@
  */
 /* @var $this yii\web\View */
 
-/* @var $manufacturer \frontend\models\Manufacturer */
+/* @var $manufacturer frontend\models\Manufacturer */
 /*  models  */
 
 /*  widgets  */
@@ -20,11 +20,15 @@ PagesAsset::register($this);
 
 $this->params['breadcrumbs'][] = [
     'label' => 'Производители',
-    'url' => Url::to(['pages/dveri']),
+    'url' => Url::to(['/pages/manufacturers']),
     'template' => "<li> {link} </li>\n", // template for this link only
-
 ];
-$nameFactory = 'Agoprofil';
+$this->params['breadcrumbs'][] = [
+    'label' => $name,
+    'url' => '#',
+    'template' => "<li> {link} </li>\n", // template for this link only
+];
+$nameFactory = $name;//'Agoprofil';
 $title = 'Традиции и инновации';
 
 Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');

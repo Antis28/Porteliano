@@ -16,9 +16,8 @@ class DoorCatalogAsset extends AssetBundle
     public $baseUrl = '@web';
 
     public $css = [
-        'css/pages/doors-catalog.css',
         'css/pages/doors-card.css',
-        
+        'css/pages/doors-catalog.css',
 
     ];
     public $js = [

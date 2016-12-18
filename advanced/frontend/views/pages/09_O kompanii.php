@@ -7,7 +7,6 @@
  */
 /* @var $this yii\web\View */
 
-/* @var $manufacturer \frontend\models\Manufacturer */
 /*  models  */
 
 /*  widgets  */
@@ -48,13 +47,13 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
             </div>
             <div class="col-md-2 col-md-offset-1 .col-sm-2 col-xs-2">
                 <div class="ruletka">
-                    <h2>Доставка</h2>
-                    <p>Все о стоимостидоставки и установки</p>
+                    <h2 >Доставка</h2>
+                    <p>Все о стоимости доставки и установки</p>
                     <!-- TODO: Кнопка ведет на всплывающее окно с формой обратной связи.-->
                     <a href="<?= Url::to(['pages/about_dostavka']); ?>"
                        class="btn btn-default btn-lg"
                        role="button">
-                        Подробнее
+                        ПОДРОБНЕЕ
                     </a>
                 </div>
             </div>
@@ -65,7 +64,7 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
         <div class="col-md-12">
             <div class="action">
                 <div class="img-holder"
-                     data-image="<?= Yii::getAlias('@web') . '/img/background/FOTO_INTRO_01.jpg' ?>">
+                     data-image="<?= Yii::getAlias('@web') . '/img/background/28818-FOTO_INTRO_15.jpg' ?>">
                 </div>
                 <div class="row">
                     <div class="action-text">
@@ -74,7 +73,7 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
                             <p>
                                 Гарантированно улучшаем любое диллерское предложение на все модели итальянских дверей
                                 и
-                                перегородок на 4%!
+                                перегородок <span>на 4%!</span>
                             </p>
                         </article>
                         <div class="col-md-2 col-xs-12">
@@ -83,6 +82,9 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
                     </div>
 
                 </div>
+                <!-- TODO: Сделать через assets -->
+                <script src="/js/lib/jquery.min.js"></script>
+                <script src="/js/lib/jquery.imageScroll.min.js"></script>
                 <script>
                     $('div.action > .img-holder').imageScroll({
                         holderClass: 'imageHolder',
@@ -102,7 +104,7 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
     </div>
     <div class="limited-block bottom-block">
         <div class="row">
-            <div class="col-md-3 bg-door"></div>
+            <div class="col-md-3 bg-door hidden-xs"></div>
             <div class="col-md-8 bottom-text">
                 <p>
                     Мы всегда сможем предложить то, чего нет у наших конкурентов, так как мы работаем с большим

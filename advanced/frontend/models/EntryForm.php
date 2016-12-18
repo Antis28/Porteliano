@@ -13,12 +13,14 @@ class EntryForm extends Model
 {
     public $name;
     public $email;
+    public $message;
 
     public function rules()
     {
         return [
             [['name', 'email'], 'required'],
             ['email', 'email'],
+            [['message'], 'string', 'max' => 1000]
         ];
     }
 }

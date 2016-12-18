@@ -30,9 +30,15 @@
 }
 
 #in-basket{
+    font-family: "PT Sans",sans-serif;
+    font-weight: normal;
+    font-style: normal;
     display: block;
+    border-radius: 0;
+    border: none;
     padding: 0;
     line-height: 55px;
+    letter-spacing: 0.150em;  ;
 
     width: 320px;
     height: 55px;
@@ -41,6 +47,12 @@
     text-decoration: none;
     color: #ffffff;
     background-color: #935347;
+}
+.add-basket-link:hover,
+.add-basket-link:focus,
+.add-basket-link:active,
+.add-basket-link{
+ text-decoration: none;
 }
 #in-basket:hover,.basket-button:active{
     text-decoration: none;

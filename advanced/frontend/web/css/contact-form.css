@@ -2,14 +2,11 @@
     width: 365px;
     height: 490px;
     background-color: #FFFFFF;
-
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
+    padding: 0 30px 0 30px;
 }
-
 .contact-form p {
     margin-bottom: 5%;
+    text-align: left;
 }
 
 .contact-form hr {
@@ -20,89 +17,117 @@
     margin-left: 0;
     margin-right: 0;
 }
-
+.form-control{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+    border: none;
+}
 .contact-form button {
-
     background-color: #955347;
     border: none;
+    border-radius: 0;
+    font-family: "PT Sans",sans-serif;
+    font-style: normal;
+    font-size: 16px;
     width: 100%;
 
-}
 
+}
 .contact-form button:hover {
     background-color: #6a372d;
 }
-
+.form-horizontal .form-group{
+    margin-left: 0;
+    margin-right: 0;
+}
+.contact-form textarea,
 .contact-form input {
     background-color: #f3f0df;
     font-family: 'PTSerif', serif;
     font-style: italic;
     color: #000;
-    margin: 0 0 1% 6%;
-    width: 89%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
+
 
 /* цвет шрифта для placeholder */
+.contact-form textarea::-webkit-input-placeholder,
 .contact-form input::-webkit-input-placeholder {
     color: #000;
+    font-family: "PT Serif",serif;
+    font-style: italic;
+    font-size: 14px;
 }
-
+.contact-form textarea::-moz-placeholder,
 .contact-form input::-moz-placeholder {
     color: #000;
+    font-family: "PT Serif",serif;
+    font-style: italic;
+    font-size: 14px;
 }
-
+.contact-form textarea:-moz-placeholder,
 .contact-form input:-moz-placeholder {
     color: #000;
+    font-family: "PT Serif",serif;
+    font-style: italic;
+    font-size: 14px;
 }
-
+.contact-form textarea:-ms-input-placeholder,
 .contact-form input:-ms-input-placeholder {
     color: #000;
+    font-family: "PT Serif",serif;
+    font-style: italic;
+    font-size: 14px;
 }
 
 /* сдвиг placeholder-а вправо при фокусе */
+.contact-form textarea::-webkit-input-placeholder,
 .contact-form input::-webkit-input-placeholder {
     color: #000;
     text-overflow: ellipsis;
     text-indent: 0px;
     transition: text-indent 0.3s ease;
 }
-
+.contact-form textarea::-moz-placeholder,
 .contact-form input::-moz-placeholder {
     color: #000;
     text-overflow: ellipsis;
     text-indent: 0px;
     transition: text-indent 0.3s ease;
 }
-
+.contact-form textarea:-moz-placeholder,
 .contact-form input:-moz-placeholder {
     color: #000;
     text-overflow: ellipsis;
     text-indent: 0px;
     transition: text-indent 0.3s ease;
 }
-
+.contact-form textarea:-ms-input-placeholder,
 .contact-form input:-ms-input-placeholder {
     color: #000;
     text-overflow: ellipsis;
     text-indent: 0px;
     transition: text-indent 0.3s ease;
 }
-
+.contact-form textarea:focus::-webkit-input-placeholder,
 .contact-form input:focus::-webkit-input-placeholder {
     text-indent: 500px;
     transition: text-indent 0.3s ease;
 }
-
+.contact-form textarea:focus::-moz-placeholder,
 .contact-form input:focus::-moz-placeholder {
     text-indent: 500px;
     transition: text-indent 0.3s ease;
 }
-
+.contact-form textarea:focus:-moz-placeholder,
 .contact-form input:focus:-moz-placeholder {
     text-indent: 500px;
     transition: text-indent 0.3s ease;
 }
-
+.contact-form textarea:-ms-input-placeholder,
 .contact-form input:focus:-ms-input-placeholder {
     text-indent: 500px;
     transition: text-indent 0.3s ease;
@@ -125,6 +150,7 @@
 .contact-form-header-all{
     font-family: 'PTSerif', serif;
     font-size: 30px;
+    margin-top: 45px;
 }
 .contact-form-text{
     font-family: "PTSans", sans-serif;
@@ -150,4 +176,10 @@
  }
 .contact-form-back-call{
     height: 540px;
+}
+.col-lg-12{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }

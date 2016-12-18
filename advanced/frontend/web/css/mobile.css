@@ -68,7 +68,7 @@
         height: 40px;
         z-index: 1000;
         line-height: 70px;
-        top: -5px;
+        top: 0;
     }
 
     div#other-panel > a > span {

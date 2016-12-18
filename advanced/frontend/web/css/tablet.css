@@ -859,6 +859,7 @@
 	/*О компании*/
 
 	.wrap-about{
+		width:100%;
 		height:730px;
 	}
 
@@ -917,5 +918,674 @@
 		text-align:left;
 		line-height:75px;
 		padding-left:34px;
+	}
+
+	/*Страницы*/
+
+	/*Каталог*/
+
+	.max-width.row{
+		width:720px;
+		margin:0px auto;
+		height:auto;
+	}
+
+	.max-width > div{
+		margin:0px;
+		padding:0px;
+		width:700px;
+		margin:0px auto;
+		text-align:left;
+	}
+
+	ul.breadcrumb{
+		margin:0px;
+		padding:0px;
+		padding-top:40px;
+	}
+
+	ul.breadcrumb > li:first-child{
+		margin-left:0px;
+	}
+
+	.door-catalog > .panel-quick-selection{
+		width:720px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:first-child >
+	div{
+		width:700px;
+		margin:0px auto;
+		padding:0px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:first-child >
+	div > h2{
+		margin:0px;
+		margin:20px 0px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2){
+		width:700px;
+		margin:0px auto;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container{
+		width:700px;
+		height:178px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > div > h5{
+		margin-top:0px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .material,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .manufacturer,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .block-1-price,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .pick-up{
+		display:block;
+		float:left;
+		margin:0px;
+		padding:0px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .pick-up,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .pick-up > #w12{
+		width:130px;
+		height:40px;
+		margin:0px;
+		padding:0px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .pick-up{
+		position:relative;
+		margin-top:22px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .block-1-price,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .block-1-price > .btn-group{
+		width:180px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .block-1-price > .btn-group > #w9{
+		width:140px;
+		height:40px;
+		padding:0px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .material,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .material > .btn-group,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .style,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .style > .btn-group,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .manufacturer,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .manufacturer > .btn-group{
+		width:330px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .material > .btn-group > #w0,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .style > .btn-group > #w3,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .manufacturer > .btn-group > #w6{
+		padding:0px;
+		width:290px;
+		height:40px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .material > .btn-group > #w1,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .style > .btn-group > #w4,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .manufacturer > .btn-group > #w7,
+	.door-catalog > .panel-quick-selection > div.row:nth-child(2) > div >
+	.flex-container > .block-1-price > .btn-group > #w10{
+		width:40px;
+		height:40px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(3){
+		width:700px;
+		margin:0px auto;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(3) >
+	div{
+		width:700px;
+		margin:0px;
+		padding:0px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(4){
+		width:720px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(4) > div{
+		width:720px;
+		margin:0px;
+		padding:0px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(4) > 
+	div > div{
+		width:720px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(4) > 
+	div > div > div.tile{
+		margin:0px;
+		margin-top:20px;
+		margin-right:10px;
+		background-color:#fff;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(4) > 
+	div > div > div.tile:nth-child(3n + 3){
+		margin-right:0px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(6){
+		width:720px;
+		margin-bottom:60px;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(6) > 
+	div{
+		margin:0px;
+		padding:0px;
+		width:345px;
+		height:350px;
+		float:left;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(6) > 
+	div > div{
+		margin:0px;
+		padding:0px;
+		height:350px;
+		border:6px solid #935347;
+		box-sizing: border-box;
+	}
+
+	.door-catalog > .panel-quick-selection > div.row:nth-child(6) > 
+	div:first-child{
+		margin-right:10px;
+	}
+
+	/*Межкомнатные двери*/
+
+	div.switch{
+		width:700px;
+		margin:0px auto;
+		padding:0px;
+	}
+
+	div.switch .doors-panel{
+		width:700px;
+		max-height:1300px;
+	}
+
+	div.switch .doors-panel > .row:first-child > div{
+		margin:0px;
+		padding:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(2) > div{
+		height:352px;
+		width:170px;
+		margin:0px;
+		padding:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(2) > div > a > img{
+		width:100%;
+		height:352px;
+		margin:0px;
+		padding:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(2) > div > a >
+	.doors-gradient{
+		position:relative;
+		margin-top:-423px;
+		left:5px;
+		width:160px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(2) > div > a > h2{
+		width:100%;
+		text-align:center;
+		left:70px;
+		text-transform:uppercase;
+		top:295px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(2) > div:nth-child(4) 
+	> a > h2{
+		top:270px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(3){
+		width:700px;
+		margin:0px auto;
+		padding:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(3) > div{
+		margin:0px;
+		padding:0px;
+		width:700px;	
+	}
+
+	div.switch .doors-panel > .row:nth-child(3) > div > h2{
+		margin:0px;
+		margin-top:50px;
+		margin-bottom:20px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(2) > div{
+		margin-right:6px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(2) > div:nth-child(4n + 4){
+		margin-right:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(4){
+		width:700px;
+		height:350px;
+		margin:0px;
+		padding:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(4) > div{
+		width:345px;
+		height:350px;
+		margin:0px;
+		padding:0px;
+		float:left;
+	}
+
+	div.switch .doors-panel > .row:nth-child(4) > div > a{
+		width:345px;
+		height:350px;
+		padding:0px;
+		margin:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(4) > div > a > img{
+		width:345px;
+		height:350px;
+		padding:0px;
+		margin:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(4) > div > a > 
+	.doors-gradient{
+		width:335px;
+		position:relative;
+		left:5px;
+		top:-180px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(4) > div:first-child{
+		margin-right:10px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(4) > div > a > h2{
+		width:100%;
+		top:290px;
+		text-transform:uppercase;
+		text-align:center;
+		left:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(5){
+		width:700px;
+		padding:0px;
+		margin:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(5) > div{
+		width:700px;
+		margin:0px;
+		padding:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(5) > div > h2{
+		margin:0px;
+		margin:50px 0px 25px 0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(6){
+		width:350px;
+		height:170px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(6) > div,
+	div.switch .doors-panel > .row:nth-child(6) > div > a,
+	div.switch .doors-panel > .row:nth-child(6) > div > a > img{
+		width:350px;
+		height:170px;
+		padding:0px;
+		margin:0px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(6) > div > a >
+	.doors-gradient{
+		width:340px;
+		position:relative;
+		left:5px;
+		top:-90px;
+	}
+
+	div.switch .doors-panel > .row:nth-child(6) > div > a > h2{
+		width:100%;
+		position:relative;
+		text-align:center;
+		text-transform:uppercase;
+		top:-140px;
+		font-size:19px;
+		left:0px;
+	}
+
+	.switch > div > div:last-child{
+		width:700px;
+		height:400px;
+	}
+
+	.switch > div > div:last-child > div{
+		margin:0px;
+		padding:0px;
+		width:700px;
+	}
+
+	.switch > div > div:last-child > div > h4{
+		margin:0px;
+		margin:60px 0px 20px 0px;
+	}
+
+	.switch > div > div:last-child > div > p{
+		margin-bottom:20px;
+	}
+
+	/*Производители*/
+
+	.wrap-manuf > .mobil-width:first-child{
+		width:700px;
+		height:45px;
+		margin-top:45px;
+	}
+
+	.wrap-manuf > .mobil-width:last-child{
+		margin-top:55px;
+	}
+
+	.wrap-manuf > .mobil-width:first-child > div,
+	.wrap-manuf > .mobil-width:last-child > div{
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap-manuf > .mobil-width:first-child > div > h2{
+		margin:0px;
+	}
+
+	.wrap-manuf > .mobil-width:last-child > div:first-child{
+		width:180px;
+		margin-right:20px;
+	}
+
+	.wrap-manuf > .mobil-width:last-child > div{
+		float:left;
+	}
+
+	.wrap-manuf > .mobil-width:last-child > div:last-child,
+	.wrap-manuf > .mobil-width:last-child > div:last-child > ul{
+		width:500px;
+	}
+
+	.wrap-manuf > .mobil-width:last-child > div:last-child > ul >
+	li{
+		margin-left:0px;
+		margin-right:0px;
+		background-color:#fff;
+	}
+
+	.wrap-manuf > .mobil-width:last-child > div:last-child > ul >
+	li:nth-child(2n + 1){
+		margin-left:84px;
+		margin-right:20px;
+	}
+
+	/*Производители внутр*/
+
+	.wrap.order-registration{
+		margin-top:20px;
+		width:700px;
+	}
+
+	.wrap.order-registration > div:first-child{
+		background-color:transparent;
+		margin:0px;
+		padding:0px;
+		width:430px;
+		font-size:45px;
+	}
+
+	.wrap.order-registration > div:last-child{
+		margin-top:30px;
+	}
+
+	.wrap.order-registration > div:last-child > img{
+		width:470px;
+	}
+
+	.wrap.order-registration > div:last-child > p.first-p{
+		font-size:22px;
+	}
+
+	/*О Компании*/
+
+	.wrap-about.switch{
+		/*max-width:700px;*/
+		max-width:inherit;
+		width:100%;
+	}
+
+	.wrap-about.switch > div > .row:first-child{
+		margin-top:45px;
+	}
+
+	.wrap-about.switch > div:first-child{
+		width:700px;
+		margin:0px auto;
+	}
+
+	.wrap-about.switch > div > .row:last-child{
+		margin-top:40px;
+	}
+
+	.wrap-about.switch > div > .row:last-child > div:first-child > 
+	.parag-sm{
+		margin-bottom:60px;
+	}
+
+	.wrap-about.switch > div > .row:first-child > div{
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap-about.switch > div > .row:first-child > div > h1{
+		margin:0px;
+	}
+
+	.wrap-about.switch > .row:nth-child(2){
+		max-width:inherit;
+		width:100%;
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap-about.switch > .row:nth-child(2) > div.col-md-12{
+		width:100%;
+		margin:0px;
+		padding:0px;
+		height:650px;
+	}
+
+	.wrap-about.switch > .row:nth-child(2) > div.col-md-12 > 
+	.action{
+		width:100%;
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap-about.switch > .row:nth-child(2) > div.col-md-12 > 
+	.action > .row,
+	.wrap-about.switch > .row:nth-child(2) > div.col-md-12 > 
+	.action > .row > .action-text{
+		width:700px;
+		margin:0px auto;
+	}
+
+	.wrap-about.switch > .row:nth-child(2) > div.col-md-12 > 
+	.action > .row > .action-text > div,
+	.wrap-about.switch > .row:nth-child(2) > div.col-md-12 > 
+	.action > .row > .action-text > article{
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap-about.switch > .row:nth-child(2) > div.col-md-12 > 
+	.action > .row > .action-text > article{
+		width:300px;
+		margin-right:35px;
+		margin-top:90px;
+	}
+
+	.wrap-about.switch > .row:nth-child(2) > div.col-md-12 > 
+	.action > .row > .action-text > div{
+		width:365px;
+	}
+
+	div.ruletka{
+		width:700px;
+		height:210px;
+		background-position:right center;
+		margin:0px;
+		padding:0px;
+		margin-bottom:72px;
+	}
+
+	div.ruletka > h2{
+		padding-left:30px;
+		padding-top:30px;
+		margin:0px;
+	}
+
+	div.ruletka > p{
+		margin:0px;
+		margin-top:20px;
+		padding-left:30px;
+	}
+
+	div.ruletka > a{
+		margin-left:30px;
+		margin-top:20px;
+	}
+
+	.wrap-about.switch{
+		height:100%;
+	}
+
+	.wrap-about.switch > div.bottom-block{
+		width:700px;
+		margin:0px auto;
+		height:710px;
+		margin-top:280px;
+	}
+
+	/*Контакты*/
+	.wrap-contacts.switch{
+		width:100%;
+		height:100%;
+	}
+
+	.wrap-contacts.switch > .row-contact{
+		width:700px;
+		margin:0px auto;
+	}
+
+	.wrap-contacts.switch > .row-contact > div > div{
+		margin:0px;
+		padding:0px;
+		float:left;
+	}
+
+	.wrap-contacts.switch > .row-contact > div > div:first-child{
+		width:339px;
+	}
+
+	.wrap-contacts.switch > .row-contact > div > div:first-child > 
+	h2{
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap-contacts.switch > .row-contact > div > div:first-child >
+	.orange{
+		margin-top:25px;
+	}
+
+	.wrap-contacts.switch > .row-contact > div > div:first-child >
+	.row > div{
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap-contacts.switch > .row-contact > div{
+		margin-top:45px;
+	}
+
+	.wrap-contacts.switch > .row-contact > div > div:last-child{
+		width:361px;
+		height:257px;
+		margin-top:75px;
+	}
+
+	.contact-img{
+		height:100%;
+		background-image:url(../img/other/Kontakti.png);
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+
+	.forma{
+		width:365px;
+		margin:0px;
+		padding:0px;
+		position:relative;
+		top:-570px;
+		left:calc(100% - 398px);
 	}
 }

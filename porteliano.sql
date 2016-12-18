@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `greeny_images` (
   `srcBig` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы porteliano_db.greeny_images: ~5 553 rows (приблизительно)
+-- Дамп данных таблицы porteliano_db.greeny_images: ~5 571 rows (приблизительно)
 /*!40000 ALTER TABLE `greeny_images` DISABLE KEYS */;
 INSERT INTO `greeny_images` (`imageID`, `src`, `srcSmall`, `srcBig`) VALUES
 	(15, '/uploaded/banners/sales.jpg', '/uploaded/banners/sales_small.jpg', NULL),
@@ -5710,7 +5710,7 @@ CREATE TABLE IF NOT EXISTS `manufacturer` (
   UNIQUE KEY `title` (`title`)
 ) ENGINE=InnoDB AUTO_INCREMENT=188 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы porteliano_db.manufacturer: ~300 rows (приблизительно)
+-- Дамп данных таблицы porteliano_db.manufacturer: ~187 rows (приблизительно)
 /*!40000 ALTER TABLE `manufacturer` DISABLE KEYS */;
 INSERT INTO `manufacturer` (`id`, `title`, `alias`, `imageID`, `body`, `website`, `brandID`, `isPublished`, `meta_title`, `meta_description`, `meta_keywords`) VALUES
 	(1, 'Agoprofil', 'Agoprofil', 5620, '<h1 style="text-align: justify;">Традиции и инновации</h1>\r\n<div style="text-align: justify;">Популярная мебельная фабрика AGOPROFIL ведет коммерческую деятельность с далекого 1972 года. Из них на российском рынке марка присутствует 10 лет, и за этот срок она успела полюбиться множеству покупателей. Свою деятельность AGOPROFIL начинала с изготовления классических итальянских дверей из дерева. Со временем старые ремесленные традиции были не просто сохранены, но скомбинированы с различными современными способами производства и дизайна. Сегодня фабрика специализируется на межкомнатных дверях.</div>\r\n<div style="text-align: justify;">&nbsp;</div>\r\n<h3 style="text-align: justify;">Какие преимущества таят в себе двери AGOPROFIL?</h3>\r\n<ul>\r\n    <li style="text-align: justify;">&nbsp;Классический стиль, сочетающий в себе прошлое, настоящее и будущее;</li>\r\n    <li style="text-align: justify;">&nbsp;Инновационный подход, гарантирующие оптимальные технические характеристики и максимальное удобство монтажа;</li>\r\n    <li style="text-align: justify;">&nbsp;Разнообразие моделей, подходящих как для жилых, так и для офисных помещений;</li>\r\n    <li style="text-align: justify;">&nbsp;Узнаваемый дизайн, нарочитая простота форм и удивительно долгий срок службы.</li>\r\n</ul>\r\n<div style="text-align: justify;">Помимо этого, сегодня AGOPROFIL имеет собственное проектное бюро, где очень &nbsp;чутко реагируют на желания потребителей.</div>\r\n<div style="text-align: justify;">Компания имеет особый сертификат системы качества UNI EN ISO 9001. Это не просто признак того, что предприятию можно доверять, но еще и доказательство способности фабрики гибко реагировать на изменения потребностей рынка. Сертификат свидетельствует о грамотном проектировании и разработке индивидуальных архитектурных решений.</div>\r\n<div style="text-align: justify;">В любой серии дверей, выпускаемых фабрикой, есть модели, сделанные из шпона, из массива и с сотовым наполнением. AGOPROFIL изготавливает и все виды дверных аксессуаров. Сами двери изготавливают в нескольких основных вариантах: распашные, раздвижные двери, и &laquo;книжки&raquo;.</div>\r\n<div style="text-align: justify;">Оформление двери может быть практически любым: от строгой классики до дверей с позолотой, ручной росписью и прочими атрибутами премиум-класса.</div>\r\n<div style="text-align: justify;">&nbsp;</div>\r\n<h3 style="text-align: justify;">Чтобы было проще найти нужное вам среди всего изобилия моделей, кратко расскажем о каждой серии дверей от AGOPROFIL:</h3>\r\n<ul>\r\n    <li style="text-align: justify;">Серия Class характеризуется строгим классическим дизайном. Двери изготавливаются из древесины.</li>\r\n    <li style="text-align: justify;">Crystal можно расшифровать как кристальную чистоту в оформлении. Количество украшений на деревянных дверях этой серии минимально.</li>\r\n    <li style="text-align: justify;">Diamond изготавливается из шпона. Двери этой серии отличаются наличием матовых стекол.</li>\r\n    <li style="text-align: justify;">Double round похож на серию Diamond, только стеклянные вставки здесь более широкие и напоминают небольшие окна.</li>\r\n    <li style="text-align: justify;">Elegance характеризуется массивными косяками. В дизайне присутствуют овальные вставки из матового стекла.</li>\r\n    <li style="text-align: justify;">Fun отличается яркой расцветкой дверей и создана специально для тех, кто хочет бросить вызов скучной повседневности.</li>\r\n</ul>\r\n<div style="text-align: justify;">Компания &quot;Абсолют Интерьер&quot; рада предложить широкий выбор дверей AGOPROFIL.</div>', 'http://www.agoprofil.com/ru/', 5, 1, NULL, NULL, NULL),
@@ -5912,7 +5912,7 @@ CREATE TABLE IF NOT EXISTS `material` (
   UNIQUE KEY `title` (`title`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы porteliano_db.material: ~3 rows (приблизительно)
+-- Дамп данных таблицы porteliano_db.material: ~4 rows (приблизительно)
 /*!40000 ALTER TABLE `material` DISABLE KEYS */;
 INSERT INTO `material` (`id`, `title`) VALUES
 	(5, 'Cтекло'),
@@ -6006,7 +6006,7 @@ CREATE TABLE IF NOT EXISTS `price` (
   CONSTRAINT `FK_price_product` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6146 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы porteliano_db.price: ~4 rows (приблизительно)
+-- Дамп данных таблицы porteliano_db.price: ~1 460 rows (приблизительно)
 /*!40000 ALTER TABLE `price` DISABLE KEYS */;
 INSERT INTO `price` (`id`, `currency_id`, `cost`, `product_id`, `date`) VALUES
 	(4099, 978, 1285.00, 1, NULL),
@@ -7522,7 +7522,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   CONSTRAINT `FK_product_style` FOREIGN KEY (`style_id`) REFERENCES `style` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1924 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы porteliano_db.product: ~1 555 rows (приблизительно)
+-- Дамп данных таблицы porteliano_db.product: ~1 655 rows (приблизительно)
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
 INSERT INTO `product` (`id`, `title`, `section_id`, `material_id`, `style_id`, `manufacturer_id`, `article`, `img`, `description`, `date`, `seriesID`, `collection`, `note`, `productModel`, `productArticul`, `productIndex`, `otherDescription`, `productImageID`, `productAlias`, `productSeoKeywords`, `productSeoDescription`, `productSeoTitle`, `productPrice`, `productOldPrice`, `productVendorPrice`, `currencyID`, `productWeight`, `productPoints`, `productStyle`, `isDiscount`, `discount`, `stockID`, `isTop`, `quantity`, `importID`, `status`) VALUES
 	(1, 'Межкомнатная дверь Agoprofil 713 XLS P', 3, 1, 1, 5, '713', NULL, NULL, '2014-10-07 09:49:02', 7, NULL, NULL, NULL, NULL, NULL, '', 5713, 'agoprofil713XLSP', NULL, NULL, NULL, 1285.00, 0.00, 0.00, 978, NULL, NULL, 'classic', 0, 0.00, 1, 0, 2, NULL, 1),
@@ -9197,15 +9197,15 @@ CREATE TABLE IF NOT EXISTS `section` (
   CONSTRAINT `FK_section_section` FOREIGN KEY (`parent_id`) REFERENCES `section` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы porteliano_db.section: ~29 rows (приблизительно)
+-- Дамп данных таблицы porteliano_db.section: ~6 rows (приблизительно)
 /*!40000 ALTER TABLE `section` DISABLE KEYS */;
 INSERT INTO `section` (`id`, `title`, `parent_id`, `title_main`, `page`) VALUES
-	(1, 'ДВЕРИ', NULL, NULL, NULL),
-	(2, 'Перегородки', NULL, NULL, NULL),
-	(3, 'Межкомнатные двери', 1, NULL, NULL),
-	(4, 'Входные двери', 1, NULL, NULL),
-	(5, 'Ручки', 1, NULL, NULL),
-	(6, 'Индивидуальные изделия', 1, NULL, NULL);
+	(1, 'ДВЕРИ', NULL, 'Двери', '?section=1'),
+	(2, 'Перегородки', NULL, 'Перегородки', '?section=2'),
+	(3, 'Межкомнатные двери', 1, 'Межкомнатные двери', '?section=3'),
+	(4, 'Входные двери', 1, 'Входные двери', '?section=4'),
+	(5, 'Ручки', NULL, 'Ручки', '?section=5'),
+	(6, 'Индивидуальные изделия', NULL, 'Индивидуальные изделия', '?section=6');
 /*!40000 ALTER TABLE `section` ENABLE KEYS */;
 
 
@@ -9218,7 +9218,7 @@ CREATE TABLE IF NOT EXISTS `style` (
   UNIQUE KEY `title` (`title`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы porteliano_db.style: ~2 rows (приблизительно)
+-- Дамп данных таблицы porteliano_db.style: ~3 rows (приблизительно)
 /*!40000 ALTER TABLE `style` DISABLE KEYS */;
 INSERT INTO `style` (`id`, `title`) VALUES
 	(1, 'Классический'),
@@ -9248,7 +9248,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Дамп данных таблицы porteliano_db.user: 1 rows
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES
-	(1, 'admin', '', '$2y$13$XFkg1XkmwNpeDfnP7nyU3ONzkE9gzaz8ribn.S23dlJ/9t9j1sFSa', NULL, '', 10, 0, 1480107957);
+	(1, 'admin', '', '$2y$13$XFkg1XkmwNpeDfnP7nyU3ONzkE9gzaz8ribn.S23dlJ/9t9j1sFSa', NULL, 'kefir266@gmail.com', 10, 0, 1480107957);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

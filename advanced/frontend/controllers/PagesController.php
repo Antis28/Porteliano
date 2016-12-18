@@ -28,8 +28,8 @@ use app\models\EntryForm;
  * ссылки для перехода
  *
  * /pages/dveri
- * /pages/doorcatalog
- * /pages/door_card
+ * /catolog/doorcatalog
+ * /catolog/door_card
  * /pages/manufacturers
  * /pages/manufacturers_inner
  * /pages/about
@@ -130,15 +130,15 @@ class PagesController extends Controller
 
     public function actionManufacturers()
     {
-        //TODO переделать в запрос производителей из базы
+        //TODO: переделать в запрос производителей из базы
         $manufArr = file('manuf.txt');
 
         return $this->render('07_Proizvoditeli', ['manufacturer' => $manufArr,]);
     }
 
-    public function actionManufacturers_inner()
+    public function actionManufacturers_inner($name)
     {
-        return $this->render('08_Proizvoditeli-vnutr');
+        return $this->render('08_Proizvoditeli-vnutr',['name' => $name]);
     }
     public function actionAbout()
     {

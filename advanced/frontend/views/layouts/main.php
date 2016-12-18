@@ -73,7 +73,7 @@ MobileAsset::register($this);
                             $address = Url::to(['site/entry'], true);
                             Modal::begin([
                                 'headerOptions' => ['id' => 'modalHeader'],
-                                'header' => '<h2>здесь будет то, что написано в title</h2>',
+                                'header' => '<h2>Задайте свой вопрос</h2>',
                                 //keeps from closing modal with esc key or by clicking out of the modal.
                                 // user must click cancel or X to close
                                 //'clientOptions' => ['backdrop' => 'static', 'keyboard' => FALSE],
@@ -137,15 +137,15 @@ MobileAsset::register($this);
                             'linkOptions' => ['data-target' => 'a3'],
                         ],
                         ['label' => 'ПРОИЗВОДИТЕЛИ',
-                            'url' => Url::to(['site/index', '#' => 'manufacturers']),
+                            'url' => Url::to(['/pages/manufacturers']),
                             'linkOptions' => ['data-target' => 'a4'],
                         ],
                         ['label' => 'О КОМПАНИИ',
-                            'url' => Url::to(['site/index', '#' => 'about']),
+                            'url' => Url::to(['/pages/about']),
                             'linkOptions' => ['data-target' => 'a5'],
                         ],
                         ['label' => 'КОНТАКТЫ',
-                            'url' => Url::to(['site/index', '#' => 'contacts']),
+                            'url' => Url::to(['/pages/contacts']),
                             'linkOptions' => ['data-target' => 'a6'],
                         ],
 

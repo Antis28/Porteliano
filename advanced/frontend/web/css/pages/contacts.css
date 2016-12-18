@@ -7,9 +7,9 @@
 {
     margin-top: 5%;
 }
-.wrap-contacts  h2{
-    font-family: "Copperplate", serif;
-    font-size: 40px;
+.wrap-contacts h2{
+    font-family: "PT Serif", serif;
+    font-size: 30px;
 }
 @media screen and  (min-width: 1024px) {
     .contact-img {
@@ -58,4 +58,71 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1100px;
+}
+/********** form *************************************************/
+.contact-form-header-all{
+    font-family: 'PTSerif', serif;
+    font-size: 30px;
+    margin-top: 45px;
+}
+.contact-form-text{
+    font-family: "PTSans", sans-serif;
+    font-size: 16px;
+}
+
+.contact-form-header{
+    font-family: "PTSerif", serif;
+    font-size: 40px;
+}
+.contact-form-city,
+.contact-form-str,
+.contact-form-phone,
+.contact-form-mail{
+    font-family: "PTSans", sans-serif;
+    font-size: 18px;
+}
+.contact-form-city{
+    color: #fda552;
+}
+.contact-form-mail{
+    color: #b16e3a;
+}
+.contact-form-back-call{
+    height: 540px;
+}
+.col-lg-12{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .row-contact {
+        max-width: 460px;
+    }
+    .marging-clear{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .padding-clear{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .indent {
+        margin-bottom: 30px;
+    }
+    .forma {
+        top: 260px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .wrap-contacts h2{
+        font-family: "PT Serif", serif;
+        font-size: 30px;
+    }
+    .contact-form p{
+        font-size: 16px;
+        font-family: "PT Sans", sans-serif;
+    }
 }

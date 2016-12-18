@@ -1,74 +1,90 @@
-body{
+body {
     background-color: #fdfdf3;
 }
-.delivery{
+
+.delivery {
     min-height: 485px;
-    font-family: "PT Sans",sans-serif;
+    max-width: 1100px;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
 }
-.lifting-costs{
-    font-family: "PT Sans",sans-serif;
+
+.metering,
+.lifting-costs {
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
 }
-.table-headers{
+
+.table-headers {
     color: #b7743e;
     font-weight: bold;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", sans-serif;
 }
-.panel-heading > .panel-title{
+
+.panel-heading > .panel-title {
     font-family: PTSerif, serif;
     font-size: 30px;
     text-decoration: none;
 }
-.panel-heading > .panel-title > a:hover{
-    text-decoration: none;
-}
-.panel-heading > .panel-title > a:focus{
+
+.panel-heading > .panel-title > a:hover {
     text-decoration: none;
 }
 
-.lifting-costs-head > .panel-heading{
+.panel-heading > .panel-title > a:focus {
+    text-decoration: none;
+}
+
+.lifting-costs-head > .panel-heading {
     background-color: #ece7d4;
 }
 
-.panel-lifting-costs{
+.panel-lifting-costs {
     background-color: #ece7d4;
 }
 
 .panel-metering-costs {
     background-color: #dad2bb;
 }
-.metering-costs-head > .panel-heading{
+
+.metering-costs-head > .panel-heading {
     background-color: #dad2bb;
 }
-.delivery-header{
+
+.delivery-header {
     font-size: 40px;
     font-family: "Copperplate", serif;
 }
-.delivery-cost{
+
+.delivery-cost {
     font-size: 30px;
     font-family: "PT Serif", serif;
 }
-.mark-header{
+
+.mark-header {
     font-size: 20px;
     font-family: "PT Sans", serif;
     font-weight: bold;
     color: #b7743e;
 }
-.currency{
+
+.currency {
     font-family: "ALS Rubl", ALSRubl, serif;
 }
-.consultation{
-    height: 390px;
+
+.consultation {
+    max-height: 390px;
     overflow: hidden;
 }
+
 .action h1,
-.consultation-header{
+.consultation-header {
     font-size: 40px;
     font-family: "Copperplate", serif;
     color: #ffffff;
 }
-.consultation-text{
+
+.consultation-text {
     color: #ffffff;
     font-size: 18px;
     font-family: "PT Sans", serif;
@@ -77,30 +93,213 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
-.action-text{
+
+.action-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 1030px;
 }
-.consultation-button{
+
+.consultation-button {
     font-size: 16px;
     font-family: "PT Sans", serif;
     color: #ffffff;
     background-color: #935347;
     border: none;
     border-radius: 0;
+    font-weight: normal;
+    font-style: normal;
 }
+
 .consultation-button:hover,
 .consultation-button:active,
-.consultation-button:focus{
+.consultation-button:focus {
     color: #ffffff;
     background-color: #6a372d;
     border: none;
     outline: hidden;
     border-radius: 0;
 }
-.consultation-form{
+
+.consultation-form {
     margin-top: 40px;
+}
+
+.table > tbody > tr > td {
+    border-top: none;
+}
+
+.action-push {
+    height: 20px;
+    background-color: aqua;
+    position: relative;
+}
+.panel-group .panel + .panel{
+    margin-top: 0;
+}
+.action-text > p{
+    /*font-size: 18px;*/
+    font-family: "PT Sans",sans-serif;
+}
+/****************** Mobile *************************************/
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    .delivery {
+        width: 460px
+    }
+
+    .delivery-header {
+        width: 460px
+    }
+
+    .clear-indent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .clear-margin{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .table > tbody > tr > td {
+        border-top: none;
+    }
+
+    .delivery .table-responsive {
+        border: none;
+    }
+
+    .delivery .table-responsive > tbody > tr > td:nth-child(2) {
+        text-align: right;
+    }
+
+    .collapse-wrap {
+        width: 480px;
+    }
+
+    .m-1-header {
+        position: absolute;
+        top: -3px;
+        width: 100%;
+        background-color: #ece7d4;
+    }
+
+    .table > tbody > tr.m-2-header > td {
+        padding-top: 42px;
+        /*position: relative;
+        top: 42px;*/
+    }
+
+
+
+    .panel-body {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .panel-body > .row {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .panel-body > .row > .col-md-12 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .lifting-costs > tbody > tr:nth-child(n+3) > td:nth-child(1),
+    .lifting-costs > tbody > tr:first-child > td:nth-child(1) {
+        /*background-color: #99ee99;*/
+        width: 220px;
+        padding-left: 10px;
+        padding-right: 0;
+        font-size: 16px;
+    }
+    .lifting-costs > tbody > tr:nth-child(n+3) > td:nth-child(2),
+    .lifting-costs > tbody > tr:first-child > td:nth-child(2) {
+        /*background-color: #f8efc0;*/
+        width: 81px;
+        padding-left: 5px;
+        padding-right: 10px;
+        font-size: 16px;
+        /* */
+    }
+    .lifting-costs > tbody > tr:nth-child(n+3) > td:nth-child(3),
+    .lifting-costs > tbody > tr:first-child > td:nth-child(3) {
+        /*background-color: #935347;*/
+        width: 70px;
+        padding-left: 0;
+        padding-right: 10px;
+        font-size: 16px;
+    }
+    .lifting-costs > tbody > tr:nth-child(n+3) > td:nth-child(4),
+    .lifting-costs > tbody > tr:first-child > td:nth-child(4) {
+        /*background-color: #66afe9;*/
+        width: 70px;
+        padding-left: 10px;
+        padding-right: 0px;
+        font-size: 16px;
+    }
+
+    .panel-metering-costs p {
+        font-size: 16px;
+    }
+
+    .table-headers {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .table > tbody > tr > td.table-other {
+        padding-top: 45px;
+        font-size: 14px;
+    }
+    .metering{
+        font-size: 16px;
+        font-family: "PT Sans",sans-serif;
+    }
+    .metering > tbody > tr > td:nth-child(1) {
+        /*background-color: #99ee99;*/
+        width: 310px;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    .metering > tbody > tr > td:nth-child(2) {
+        /*background-color: #f8efc0;*/
+        width: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .metering > tbody > tr > td:nth-child(3) {
+        /*background-color: #935347;*/
+        width: 70px;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    .zamer{
+        margin-left: 10px;
+    }
+    .lifting-costs > tbody > tr.table-headers.m-2-header > td {
+        font-size: 14px;
+    }
+    /* parallax form */
+    .consultation {
+        max-height: 615px;
+    }
+    .consultation-form {
+        margin-top: 40px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .action-text > p{
+        font-size: 18px;
+        font-family: "PT Sans",sans-serif;
+    }
+    .consultation-button {
+        font-size: 16px;
+        width: 100%;
+    }
 }

@@ -175,11 +175,11 @@ foreach ($sections->getMenu() as $section) {
                 </div>
                 <div class="row buttons-area">
                     <div class="col-md-6  col-xs-6">
-                        <a  href="#">
+                        <a  href="#" class="add-basket-link">
 <!--                            TODO перекрасить кнопку по функции $product->isOrdered() -->
                 <span id="in-basket" class="btn btn-default send-button"
                       role="button" data-id="<?= $product->id ?>" onclick=addToCart(event)>
-                    <?= ($product->isOrdered()) ? 'Товар уже в корзине' : 'Добавить в корзину'  ?>
+                    <?= ($product->isOrdered()) ? 'Товар уже в корзине' : 'ДОБАВИТЬ В КОРЗИНУ'  ?>
                 </span>
                         </a>
                     </div>

@@ -15,6 +15,7 @@ class QuestionForm extends Model
     public $username;
     public $email;
     public $phone;
+    public $messge;
 
     public function rules()
     {

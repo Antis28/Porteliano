@@ -5,7 +5,8 @@
 .col-md-4 {
 / / background-color: #985f0d;
 }
-.limited-block{
+
+.limited-block {
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
@@ -14,30 +15,35 @@
 .wrap-about {
 
 }
+
 .action {
     position: relative;
     height: 866px;
 }
+
 @media screen and  (min-width: 1024px) {
-    .action-text{
+    .action-text {
         position: absolute;
-        top:5%;
-        left:24%;
+        top: 5%;
+        left: 24%;
         width: 1030px;
     }
 
 }
+
 @media screen and  (max-width: 1023px) {
     .wrap-about {
         max-width: 480px;
         padding: 1%;
     }
-    .action-text{
+
+    .action-text {
         position: absolute;
-        top:5%;
+        top: 5%;
         left: 0;
         width: 480px;
     }
+
     .action {
         position: relative;
         height: 870px;
@@ -45,7 +51,7 @@
 
 }
 
-.action  h1 {
+.action h1 {
     /*
     position: absolute;
     top: 30%;
@@ -83,7 +89,7 @@
     top: 12%;
     left: 57%;
     */
-    padding-top: 1%;
+    padding: 0 30px 0 30px;
 }
 
 .contact-form p {
@@ -98,7 +104,7 @@
     margin-left: 0;
     margin-right: 0;
 }
-
+/*
 .contact-form button {
     background-color: #6a372d;
     border: none;
@@ -108,7 +114,7 @@
 .contact-form button:hover {
     background-color: #955347;
 }
-
+*/
 .contact-form input {
     background-color: #f3f0df;
     font-family: 'PTSerif', serif;
@@ -116,6 +122,7 @@
     color: #000;
     margin: 0 0 1% 6%;
     width: 89%;
+    border-radius: 0;
 }
 
 /* цвет шрифта для placeholder */
@@ -139,28 +146,28 @@
 .contact-form input::-webkit-input-placeholder {
     color: #000;
     text-overflow: ellipsis;
-    text-indent: 0px;
+    text-indent: 0;
     transition: text-indent 0.3s ease;
 }
 
 .contact-form input::-moz-placeholder {
     color: #000;
     text-overflow: ellipsis;
-    text-indent: 0px;
+    text-indent: 0;
     transition: text-indent 0.3s ease;
 }
 
 .contact-form input:-moz-placeholder {
     color: #000;
     text-overflow: ellipsis;
-    text-indent: 0px;
+    text-indent: 0;
     transition: text-indent 0.3s ease;
 }
 
 .contact-form input:-ms-input-placeholder {
     color: #000;
     text-overflow: ellipsis;
-    text-indent: 0px;
+    text-indent: 0;
     transition: text-indent 0.3s ease;
 }
 
@@ -187,20 +194,26 @@
 .bottom-text {
     padding-top: 3%;
 }
-.ruletka{
+
+.ruletka {
     font-family: "PT Serif", serif;
 }
+
 @media screen and  (min-width: 1024px) {
     .ruletka {
         height: 370px;
         width: 250px;
         background: #d1c9b2 url("../../img/other/ruletka.jpg") no-repeat;
+        background-position: 0 20px;
         text-align: center;
         padding-top: 150px;
         /*margin-top: 67px;*/
         margin-left: -90px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    .wrap-about h1:first-child{
+
+    .wrap-about h1:first-child {
         margin-top: 13%;
     }
 }
@@ -212,35 +225,43 @@
         background: #d1c9b2 url("../../img/other/ruletka.jpg") no-repeat;
         background-position-x: 210px;
         margin-bottom: 1%;
-        padding: 20%;
-        padding-top: 30%;
+        padding: 30% 20% 20%;
     }
 }
 
 .ruletka .btn {
-    background-color: #6a372d;
+    background-color: #955347;
     border: none;
+    border-radius: 0;
     width: 200px;
     color: #ffffff;
+    font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .ruletka .btn:hover {
-    background-color: #955347;
+    background-color: #6a372d;
 }
-p{
+
+p {
     font-family: "PT Sans", serif;
     font-size: 18px;
 }
-.parag-big{
+
+.parag-big {
     font-size: 22px;
 }
-.parag-sm{
+
+.parag-sm {
     font-size: 18px;
     margin-bottom: 100px;
 }
+
 @media screen and  (min-width: 1024px) {
     .bg-door {
-        background:  no-repeat url(../../img/other/O-kompanii.png);
+        background: no-repeat url(../../img/other/O-kompanii.png);
         /*margin-left: 405px;*/
         margin-right: 10px;
         width: 305px;
@@ -249,7 +270,76 @@ p{
 
     }
 }
-.bottom-block{
+
+.bottom-block {
     margin-top: 100px;
     margin-bottom: 120px;
+}
+
+.ruletka h2 {
+    font-size: 40px;
+    font-family: "PT Serif", serif;
+}
+
+.ruletka p {
+    font-size: 20px;
+    font-family: "PT Sans", sans-serif;
+}
+.action-text p > span{
+    font-family: "PT Serif",serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .limited-block {
+        max-width: 460px;
+    }
+
+    .parag-sm {
+        margin-bottom: 36px;
+    }
+    .ruletka h2 {
+        margin-top: 0;
+    }
+
+    .ruletka {
+        background-position: 268px 0;
+        padding: 30px 0 0 18px;
+        margin-bottom: 40px;
+    }
+    div.action-text {
+        position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translateX(-50%) translateY(-50%);
+        width: 460px;
+    }
+    .action-text h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .action-text p {
+        font-family: "PT Serif",serif;
+        font-size: 22px;
+        text-align: center;
+    }
+    .action-text p > span{
+        font-family: "PT Serif",serif;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .action-text .contact-form{
+        padding: 0 30px 0 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .action-text .contact-form p{
+        font-size: 16px;
+    }
+    .bottom-block {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
 }

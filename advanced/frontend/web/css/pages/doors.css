@@ -86,8 +86,8 @@
 .doors-inn-gradient-pos {
     position: absolute;
     top: 242px;
-    left: 12%;
-    width: 96%;
+    left: 31px;
+    width: calc(100% - 12px);
     height: 50%;
 }
 

@@ -28,7 +28,8 @@ class PagesAsset extends AssetBundle
     ];
     public $js = [
         // доп. библиотеки
-        
+        //'/js/lib/jquery.min.js',
+        //'/js/lib/jquery.imageScroll.min.js',
         // скрипты
         'js/parallax.js',
         'js/navbarSwitch.js',
