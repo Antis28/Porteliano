@@ -9,10 +9,19 @@
     padding: 4px 12px;
 }
 .goods-row{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .description{
     line-height: 80px;
+    width: 100%;
+
+    margin-top: 45px;
+    margin-right: 140px;
+    font-family: "PT Sans",sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #413332;
 }
 .button-area{
     line-height: 80px;
@@ -35,10 +44,21 @@
     padding-bottom: 0px;
 }
 #count-goods{
-    margin-top: 30px;
+    float: right;
+    font-family: "PT Sans",sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #413332;
+    margin-top: 45px;
 }
+.wrap-basket #count-goods{
+    margin-right: 140px;
+}
+
 .delete-area > .delete{
     line-height: 80px;
+    margin-left: 78px;
 
 }
 .send-button{
@@ -59,9 +79,8 @@
     color: #ffffff;
 
 }
-.basket-describ{
-    max-width: 780px;
-    width: 650px;
+.basket-describ {
+    width: 618px;
     padding-left: 0;
     padding-right: 0;
 }
@@ -71,4 +90,30 @@
     width: 100px;
     margin-top: 23px;
 
+}
+.basket-icon {
+     margin-right: 20px;
+ }
+#goods-name{
+    float: left;
+    margin-top: 45px;
+    font-family: "PT Sans",sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #413332;
+}
+.goods-row{
+    border-top: solid 1px #eeeeee;
+}
+.basket-header{
+    color: #413332;
+    font-family: Copperplate,sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+}
+.form-area{
+    float: right;
+    margin-right: 200px;
 }

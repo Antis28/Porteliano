@@ -28,10 +28,16 @@ Yii::setAlias('@img', '@web/img/');
 <div class="wrap-basket">
     <!-- заголовок -->
     <div class="row">
-        <div class="col-md-2  ">
+        <div class="col-md-5  ">
             <h1 class="basket-header">Ваша корзина</h1>
         </div>
-        <div class="col-md-2  ">
+
+    </div>
+    <div class="row">
+        <div class="col-md-6  ">
+            <h4 id="goods-name">Наименование</h4>
+        </div>
+        <div class="col-md-6  ">
             <h4 id="count-goods">Количество</h4>
         </div>
     </div>
@@ -109,7 +115,7 @@ Yii::setAlias('@img', '@web/img/');
 
 
 
-                <div class="col-md-1 delete-all-area">
+                <div class="col-md-1 form-area">
                     <?= $form->field($modelOrder, 'customer')->textInput(['maxlength' => true]) ?>
                     <?= $form->field($modelOrder, 'phone')->textInput(['maxlength' => true]) ?>
                     <?= $form->field($modelOrder, 'email')->textInput(['type' => 'email']) ?>
