@@ -44,12 +44,17 @@ $sectionUrls = [
 
     ],
     ['/catalog',
-        'section' => '4',
+        'section' => '1',
+        'material' => '3',
+
+    ],
+    ['/catalog',
+        'section' => '1',
         'material' => '2',
 
     ],
     ['/catalog',
-        'section' => '3',
+        'section' => '1',
         'material' => '1',
 
     ],
@@ -97,7 +102,7 @@ $bottomContent_2 = 'Речь идет о входных конструкциях
                 <?php
                 for ($i = 1; $i < 3; $i++) {
                     echo '<div class="col-md-6 plate-out-doors">';
-                    echo Html::beginTag('a', ['href' => Url::to($sectionUrls[$i + 3]), 'class' => 'cover-plate']);
+                    echo Html::beginTag('a', ['href' => Url::to($sectionUrls[$i + 4]), 'class' => 'cover-plate']);
                     echo Html::img("@doors/outer_0$i.jpg",
                         ['alt' => "door_0$i", 'class' => 'tile']);
                     echo '<div class="doors-gradient doors-out-gradient-pos"></div>

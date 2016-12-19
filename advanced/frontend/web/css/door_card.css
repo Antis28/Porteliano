@@ -1,0 +1,98 @@
+/***********  Card **************/
+.wrap-novelty .doors-panel > .wrap-tiles {
+    left: 12px;
+    top: 10px;
+}
+
+.tile:hover {
+    box-shadow: 0px 0px 21px 7px #dcd7be;
+}
+
+.tile {
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-block;
+
+    padding-top: 5px;
+    text-align: center;
+    width: 230px;
+    margin-left: 13px;
+    border: 1px solid #e8e8e8;
+    background-color: white;
+}
+
+.link-tile {
+    min-height: 342px;
+    display: block;
+    line-height: 342px;
+}
+
+.tile-img {
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 342px;
+    max-width: 220px;
+}
+
+/*********** Bottom ****************/
+.add-to-wish {
+    font-size: 18px;
+    color: #777777;
+    position: absolute;
+    top: 9px;
+    left: 198px;
+}
+
+.block-4-price {
+    position: relative;
+    height: 34px;
+}
+.block-price-count.add-to-cart {
+    position: absolute;
+    top: 0;
+    left: 9px;
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    font-family: 'PTSerifBold', serif;
+    font-size: 18px;
+}
+.block-price-count > a {
+    color: #4e3d36;
+}
+.info {
+    margin-top: 5%;
+    background-color: #ece7d4;
+}
+
+.info p {
+    margin-left: 10px;
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 14px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    /*line-height: 0.020em;*/
+}
+
+.info > .delimiter {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-top: 0;
+}
+
+.info-text {
+    height: 96px;
+    background-color: transparent;
+    overflow: hidden;
+    padding-top: 12px;
+}
+
+.glyphicon-heart-empty:hover::before {
+    content: "\e005";
+    color: #942b34;
+}

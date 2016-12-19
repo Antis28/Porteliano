@@ -72,7 +72,7 @@ body {
 #navbar-line nav.navbar-default {
     background-color: #413332;
     color: #d2cca8;
-
+    font-family: PT sans, sans-serif;
     border-color: #413332;
 }
 
@@ -85,6 +85,7 @@ body {
 .navbar-default .navbar-nav > li > a:focus {
     background-color: #574847;
     color: #ffffff;
+    padding: 18px 10px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -104,10 +105,6 @@ body {
 !important;
     color: #ffffff;
 !important;
-}
-
-@media (min-width: 1092px) {
-    /* TODO переключить на кнопку   */
 }
 
 @media (min-width: 992px) {
@@ -137,20 +134,19 @@ header > div {
 #phone_1 {
     font-size: 18px;
     font-family: "PTSans", sans-serif;
-    letter-spacing: 1.8px;
+    letter-spacing: 0.100em;
 }
 
 #phone_2 {
     font-size: 18px;
     font-family: "PTSans", sans-serif;
-    letter-spacing: 1.8px;
+    letter-spacing: 0.100em;
 }
 
 #phone_1_label {
     color: #c5926b;
     font-size: 14px;
     font-family: "PTSans", sans-serif;
-    letter-spacing: 0.1px;
 }
 
 .email-nonactive {
@@ -170,7 +166,7 @@ header > div {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 10.5pt; /* -1/4 от 14pt в photoShop*/
+    font-size: 14px; /* -1/4 от 14pt в photoShop = 10.5pt*/
     padding: 10px 20px 10px 20px;
 
     border-radius: 20px;
@@ -278,6 +274,7 @@ header .row:first-child {
 .lightButton {
     background-color: #574847 !important;
     color: #ffffff !important;
+    padding-top: 18px !important;
 }
 
 .row-navbar {
@@ -289,6 +286,10 @@ header .row:first-child {
 }
 #wishlist{
     position: relative;
+    font-size: 20px;
+}
+#basket{
+    font-size: 20px;
 }
 .circle-number{
     position: absolute;
@@ -315,4 +316,7 @@ header .row:first-child {
     margin-left: auto;
     margin-right: auto;
     max-width: 1100px;
+}
+nav.navbar-default ul.navbar-nav. > li > a{
+    padding: 18px 10px;
 }

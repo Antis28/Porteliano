@@ -542,33 +542,15 @@ $metering = '
                     </div>
 
                 </div>
+                <div class="parallax" data-velocity="-.3"></div>
                 <script src="/js/lib/jquery.min.js"></script>
                 <script src="/js/lib/jquery.imageScroll.min.js"></script>
+                <script src="js/lib/jquery.jquery.scrolly.js"></script>
+
                 <script>
-                    $('div.action > .img-holder').imageScroll({
-                        holderClass: 'imageHolder',
-                        container: $('div.action'),
-                        speed: 0.1,
-                        coverRatio: 0.75,
-                        mediaWidth: 2000,
-                        mediaHeight: 1014,
-                        holderMaxHeight: 1000,
-                        holderMinHeight: 866,
-                        parallax: true,
-                        touch: false
+                    $(document).ready(function(){
+                        $('.parallax').scrolly({bgParallax: true});
                     });
-                    $(function () {
-                        $('.panel-heading > .panel-title > a').on("click", function() {
-
-                            $('div.action > .img-holder').imageScroll('refresh');
-                            var content = $('html');
-                            $('div.action > .img-holder').trigger('scroll');
-
-                            console.log( $( this ).text() );
-
-
-                        });
-                    })
                 </script>
             </div>
         </div>

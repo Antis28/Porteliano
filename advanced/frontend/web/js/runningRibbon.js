@@ -8,7 +8,7 @@
             .css("overflow", "hidden")
             .children("ul"),
         imgs = viewUL.find("a"), 	    // коллекция картинок
-        imgW = 160,						// ширина одной картинки
+        imgW = 234,						// ширина одной картинки
         imgsCount = imgs.length, 		// общее колличество картинок
         totalImgsW = imgsCount * imgW,  // общая ширина
         current = 1; 					// текушая картинка(позиция)

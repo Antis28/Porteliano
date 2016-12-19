@@ -25,7 +25,7 @@ class Wish
         
         $this->_wish[$product->id]['quantity'] = 1;
         $this->_wish[$product->id]['product'] = $product;
-        $this->_wish['quantity']++;
+        $this->_calcQuantity();
 
         return $this->_wish['quantity'];
     }

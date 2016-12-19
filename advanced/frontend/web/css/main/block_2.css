@@ -15,7 +15,8 @@
     max-width: 960px;
     min-height: 480px;
 }
-.indent-col{
+
+.indent-col {
     margin-left: 2px;
     margin-right: -2px;
 }
@@ -26,7 +27,7 @@
     text-align: center;
 }
 
-.tiles{
+.tiles {
     margin-left: auto;
     margin-right: auto;
 }
@@ -142,10 +143,10 @@
 .grips,
 .septa,
 .entryDoors,
-.interiorDoors{
+.interiorDoors {
     border: 6px solid #935347;
     color: #ffffff;
-    font-family: "PT Sans Caption",sans-serif;
+    font-family: "PT Sans Caption", sans-serif;
 }
 
 .panel-Catalog h2 {
@@ -153,20 +154,13 @@
     font-size: 40px;
 }
 
-.entryDoors:hover {
-    animation: backgroundscale_15 1.3s linear normal forwards;
-}
-
-.grips:hover {
-    animation: backgroundscale_15 1.3s linear normal forwards;
-}
-
-.septa:hover {
-    animation: backgroundscale_15 1.3s linear normal forwards;
-}
-
+.entryDoors:hover,
+.grips:hover,
+.septa:hover,
 .interiorDoors:hover {
-    animation: backgroundscale_15 1.3s linear normal forwards;
+    animation: backgroundscale_15 1s linear normal forwards;
+    border: none;
+    outline: none;
 }
 
 /* Бегущая лента */
@@ -189,6 +183,7 @@
     width: 10000px;
     list-style: none;
     line-height: 145px;
+    background-color: white;
 }
 
 .running-ribbon div.view ul > li {
@@ -221,7 +216,7 @@ button#prev {
     height: 50px;
     background-image: url('../../img/UI/arrow_inactive.jpg');
     transform: scale(1, 1);
-     margin-left: -5px;
+    margin-left: -5px;
 }
 
 button#next {
@@ -229,7 +224,7 @@ button#next {
     height: 50px;
     background-image: url('../../img/UI/arrow_inactive.jpg');
     transform: scale(-1, 1);
-     margin-left: 38px;
+    margin-left: 38px;
 }
 
 button#prev:hover {
@@ -249,12 +244,14 @@ button#next:hover {
     }
 
 }
-@media all and  (max-width: 768px){
-    .running-ribbon div.view{
+
+@media all and  (max-width: 768px) {
+    .running-ribbon div.view {
         width: 380px;
     }
 }
-.center-logo{
+
+.center-logo {
     margin-left: auto;
     margin-right: auto;
 }
@@ -265,6 +262,68 @@ button#next:hover {
     margin-right: auto;
     max-width: 1100px;
 }
-.no-link-decoration:hover{
+
+.no-link-decoration:hover {
     text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+    .panel-Catalog > div > div > h2 {
+        margin-top: 77px;
+        margin-bottom: 40px;
+    }
+
+    .interiorDoors, .grips, .entryDoors {
+        margin-top: 0px;
+    }
+
+    .grips, .septa, .entryDoors, .interiorDoors{
+        border: 0;
+        outline: 6px solid #935347;
+        background-size: cover;
+    }
+    .grips{
+        margin-bottom: 10px;
+    }
+    .septa,.grips{
+        width: 218px;
+        height: 222px;
+    }
+    .interiorDoors{
+        width: 463px;
+        height: 466px;
+    }
+    .entryDoors{
+        width: 223px;
+        height: 466px;
+        padding-top: 287px;
+    }
+    /**********************/
+    .septa{
+        padding-top: 36px;
+    }
+    .septa > .doors-gradient {
+        width: 100%;
+
+    }
+    .running-ribbon div.view {
+        margin-top: 43px;
+    }
+    .running-ribbon div.view ul {
+        height: 140px;
+        padding-top: 20px;
+    }
+    .running-ribbon div.view ul > li {
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+    .wrap-catalog div.show button {
+        margin-top: 71px;
+    }
+    button#next {
+        margin-left: 38px;
+    }
+    button#prev {
+        margin-left: -4px;
+    }
 }

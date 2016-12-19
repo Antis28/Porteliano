@@ -125,15 +125,16 @@ MobileAsset::register($this);
                             'linkOptions' => ['data-target' => 'a0'],
                         ],
                         ['label' => 'НОВИНКИ',
-                            'url' => Url::to(['site/index', '#' => 'novelty']),//['#novelty'],
+                            //TODO: как показывать новинки в каталоге section&material
+                            'url' => Url::to(['/catalog', 'section' => '1','material' => '1']),//Url::to(['site/index', '#' => 'novelty']),//['#novelty'],
                             'linkOptions' => ['data-target' => 'a1'],
                         ],
                         ['label' => 'ДВЕРИ',
-                            'url' => Url::to(['site/index', '#' => 'doors']),  //?section=1 ['#doors']
+                            'url' => Url::to(['/pages/dveri']),  //?section=1 ['#doors']
                             'linkOptions' => ['data-target' => 'a2'],
                         ],
                         ['label' => 'ПЕРЕГОРОДКИ',
-                            'url' => Url::to(['site/index', '#' => 'septa']), //?section=2  #septa
+                            'url' => Url::to(['/pages/septa']), //?section=2  #septa
                             'linkOptions' => ['data-target' => 'a3'],
                         ],
                         ['label' => 'ПРОИЗВОДИТЕЛИ',

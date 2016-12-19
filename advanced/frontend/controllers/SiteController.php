@@ -83,6 +83,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $session = Yii::$app->session;
+        $session->open();
+
         $questionForm = new QuestionForm();
         $modelProduct = new Product();
         $request = Yii::$app->request;
@@ -119,7 +122,8 @@ class SiteController extends Controller
                 'doorsIn' => $doorsIn,
                 'doorsOut' => $doorsOut,
                 'novelty' => $novelty,
-                'septum' => $septum
+                'septum' => $septum,
+                'wish' => (isset($session['wish'])) ? $session['wish'] : null
             ]);
 
     }

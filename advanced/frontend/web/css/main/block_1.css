@@ -19,7 +19,10 @@
 /* Кнопки выбора для Блока с фильтром быстрого подбора*/
 .material, .style, .manufacturer, .block-1-price{
     display: inline-block;
-    margin-left: 4%;
+    margin-left: 20px;
+}
+.material{
+    margin-left: 0;
 }
 .wrap-quick-selection .row{
     max-width: 100%;
@@ -88,7 +91,8 @@
 .category > a >.caret{
     color: #000;
     text-decoration: none;
-    font-family: GothamPro;
+    font-family: GothamPro, serif;
+    font-size: 20px;
 }
 .category > a >.caret{
     border-top: 12px dashed;
@@ -96,11 +100,12 @@
     border-left: 9px solid transparent;
 }
 /* Категории */
+.dropdown-header,
 .category > ul > li > a{
     font-size: 20px;
     color: #935347;
     /* тестовые свойства*/
-    font-size: 60px;
+    font-size: 60px;/**/
 }
 .category > ul > li > a:hover{
     background-color: #e4e2db;
@@ -141,10 +146,14 @@
 
 .panel-quick-selection{
     font-size: 22px;
-    width: 1100px;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
 
+}
+.col-clear{
+    padding-left: 0;
+    padding-right: 0;
 }
 .panel-quick-selection  h2{
     color: #955347;
@@ -159,4 +168,19 @@
     font-size: 66px;
     border-bottom: #6a372d dashed;
     */
+}
+@media screen and (min-width: 992px){
+    .material, .style, .manufacturer,.block-1-price{
+        margin-left: 20px;
+    }
+    .material{
+        margin-left: 0;
+    }
+    .btn-group{
+        border: 1px solid #574544;
+    }
+    .btn-default.btn.dropdown-toggle{
+        border-left: 1px solid #574544;
+        width: 40px;
+    }
 }

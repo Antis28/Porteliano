@@ -53,7 +53,7 @@ $bottomContent_2 = 'Именно они позволят значительно 
                         <?= Html::endTag('a'); ?>
                     </div>
                     <div class="plate plate-m-3">
-                        <?= Html::beginTag('a', ['href' =>  Url::to(['catalog/', 'section' => '2']),]); ?>
+                        <?= Html::beginTag('a', ['href' =>  Url::to(['catalog/', 'section' => '2', 'material' => '5']),]); ?>
                         <?= Html::img("@septa/septa_02.jpg",
 
                             ['alt' => "Стеклянные перегородки", 'class' => 'tile']); ?>
@@ -62,7 +62,7 @@ $bottomContent_2 = 'Именно они позволят значительно 
                         <?= Html::endTag('a'); ?>
                     </div>
                     <div class="plate plate-m-2">
-                        <?= Html::beginTag('a', ['href' =>  Url::to(['catalog/', 'section' => '2']),]); ?>
+                        <?= Html::beginTag('a', ['href' =>  Url::to(['catalog/', 'section' => '2', 'style' => '4']),]); ?>
                         <?= Html::img("@septa/septa_03.jpg",
                             ['alt' => "Радиусные перегородки", 'class' => 'tile']); ?>
                         <div class="gradient gradient-pos"></div>

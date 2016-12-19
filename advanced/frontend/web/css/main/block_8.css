@@ -30,59 +30,6 @@
     top: 10px;
 }
 
-.wrap-septa .tile {
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 30px;
-    text-align: center;
-    display: inline-block;
-
-    padding-top: 5px;
-    width: 230px;
-    margin-left: 13px;
-
-    border: 1px solid #e8e8e8;
-    min-height: 470px;
-}
-
-
-.wrap-septa .tile:hover {
-    box-shadow: 0px 0px 21px 7px #dcd7be;
-}
-
-.wrap-septa .tile-img {
-    /*margin: 0 auto;*/
-    margin-top: 7px;
-    max-height: 342px;
-    margin-left: auto;
-    margin-right: auto;
-
-    max-width: 220px;
-    height: 342px;
-}
-
-/*-inner-doors*/
-.wrap-septa .info > .delimiter {
-    height: 2px;
-    width: 100%;
-    background-color: white;
-    margin-top: 9px;
-}
-
-.wrap-septa .info {
-    margin-top: 5%;
-    background-color: #ece7d4;
-}
-
-.wrap-septa .info p {
-    text-align: left;
-    margin-left: 5%;
-}
-
-.wrap-septa .info p:first-child {
-    padding-top: 5%;
-}
-
 .wrap-septa .septa-h2 {
     text-align: center;
     font-size: 2.8em;
@@ -104,26 +51,6 @@
     /* line-height: 145px; */
     padding-left: 0
 }
-
-.wrap-septa .block-price-count {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    font-family: 'PTSerifBold', serif;
-    font-size: 18px;
-}
-
-.wrap-septa .block-price-count > a {
-    color: #4e3d36;
-}
-
-.wrap-septa .add-to-wish {
-    font-size: 16px;
-    margin-left: 100px;
-    color: #4e3d36;
-}
-
 /*******************************************************************/
 .wrap-septa .septa-show-more {
     height: 42px;

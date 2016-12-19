@@ -26,8 +26,6 @@ class Cart
         if (!isset($this->_cart[$product->id]['quantity'])) {
             $this->_cart[$product->id]['quantity'] = 1;
             $this->_cart[$product->id]['sum'] = $product->price->cost;
-            $this->_cart['quantity'] = 0;
-            $this->_cart['sum'] = 0;
 
         }
         else {
@@ -36,7 +34,10 @@ class Cart
         }
         $this->_cart[$product->id]['product'] = $product;
         $this->_cart['quantity']++;
-        $this->_cart['sum'] += $product->price->cost;
+        if (isset($this->_cart['sum']))
+            $this->_cart['sum'] += $product->price->cost;
+        else
+            $this->_cart['sum'] = $product->price->cost;
         return $this->_cart['quantity'];
     }
     

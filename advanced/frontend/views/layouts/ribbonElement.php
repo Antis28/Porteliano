@@ -13,7 +13,7 @@ use yii\helpers\Url;
 ?>
 
 <?php
-    echo Html::beginTag('div', ['class' => 'tile']);
+    echo Html::beginTag('div', ['class' => 'tile', 'data-id' => $product->id]);
 
     echo Html::a(
 
@@ -23,28 +23,31 @@ use yii\helpers\Url;
 
     //заполняется карточка
     echo Html::beginTag('div', ['class' => 'info']);
+    echo Html::beginTag('div', ['class' => 'info-text']);
     echo Html::tag('p', $product->section->title);
     echo Html::tag('p', $product->manufacturer->title);
     echo Html::tag('p', $product->title);
+    echo Html::endTag('div');
     echo Html::tag('div', '', ['class' => 'delimiter']);
     echo Html::beginTag('div', ['class' => 'block-4-price']);
     $price = $product->prices;
     echo
     Html::tag('div',
-        Html::tag('a', ((count($price)) ? current($price)->currency->title : '')
+        ((count($price)) ? current($price)->currency->title : '')
             . ' '. ((count($price) > 0) ?
                 current($price)->cost
-                : ''), ['href' =>
-            Url::to(['cart/add', 'id' => $product->id])]),
+                : ''),
         ['class' => 'block-price-count add-to-cart',
             'data-id' => $product->id]
     );
-    echo Html::tag('a',
+    echo Html::a(
         Html::tag('div', '', [
-            'class' => 'glyphicon glyphicon-heart-empty add-to-wish ',
+            'class' => 'glyphicon add-to-wish '. ((isset($wish) && $wish->isWished($product->id))
+                ? ' glyphicon-heart ' : ' glyphicon-heart-empty '),
             'data-id' => $product->id]),
-        ['href' =>
-            Url::to(['cart/addWish', 'id' => $product->id])]);
+
+        Url::to(['cart/addWish', 'id' => $product->id,]), ['onclick' => 'addToWish(event)']);
+
     echo Html::endTag('div');
     echo Html::endTag('div');
     echo Html::endTag('div');

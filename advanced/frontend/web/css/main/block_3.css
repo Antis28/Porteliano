@@ -11,7 +11,7 @@
 }
 
 .action-panel {
-    width: 80%;
+    width: 960px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,11 +21,10 @@
 
 .action-header {
     /*position: absolute;*/
-    top: 100px;
-    left: 30%;
     color: #F1F0F0;
     font-size: 50px;
     font-family: 'Copperplate', serif;
+    font-weight: bold;
     margin-top: 100px;
 
 }
@@ -37,5 +36,15 @@
     color: #F1F0F0;
     font-size: 28px;
     font-family: 'PTSerif', serif;
+    font-weight: normal;
+    font-style: normal;
     width: 100%;
+}
+@media screen and (min-width: 992px) {
+    .action-header {
+        margin-top: 140px;
+    }
+    .contact-form {
+        margin-left: 114px;
+    }
 }

@@ -51,7 +51,7 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
                     </div>
                 </div>
                 <div class="row ">
-                    <div class="col-md-12 .col-sm-12 col-xs-12">
+                    <div class="col-md-12 .col-sm-12 col-xs-12 address">
                         Москва, 3-й Донской проезд, дом 1,
                     </div>
                 </div>

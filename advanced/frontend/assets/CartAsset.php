@@ -10,24 +10,22 @@ namespace app\assets;
 use yii\web\AssetBundle;
 
 
-class MainAsset extends AssetBundle
+class CartAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
-    
+
     public $css = [
-        
-        'css/animation.css',
-        'css/gray.css',        
-        'css/main.css',
-        
+        'css/pages/basket.css',        
+        'css/pages/wishlist.css',             
     ];
     public $js = [
         // доп. библиотеки
-        'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
-        '/js/lib/jquery.scroolly.js',
-        // скрипты
-        'js/fixedMenu.js',
+        //'/js/lib/jquery.min.js',
+        //'/js/lib/jquery.imageScroll.min.js',
+        // скрипты        
+        'js/navbarSwitch.js',
+        'js/events-handler.js'
     ];
     public $depends = [
         'yii\web\JqueryAsset',

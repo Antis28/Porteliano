@@ -22,8 +22,9 @@ class CartController extends Controller
 
     public function beforeAction($action)
     {
-        return parent::beforeAction($action);
         $this->enableCsrfValidation = false;
+        return parent::beforeAction($action);
+
     }
 
     public function actionAdd(){

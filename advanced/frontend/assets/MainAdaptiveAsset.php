@@ -20,6 +20,7 @@ class MainAdaptiveAsset extends AssetBundle
         'css/gray.css',
         'css/contact-form.css',
         'css/main-adaptive.css',
+        
     ];
     public $js = [
         // доп. библиотеки
@@ -28,6 +29,7 @@ class MainAdaptiveAsset extends AssetBundle
 
         '/js/lib/jquery.scroolly.js',
         // скрипты
+        'js/fixedMenu.js',
 
     ];
     public $depends = [

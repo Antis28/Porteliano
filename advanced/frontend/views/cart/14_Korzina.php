@@ -17,10 +17,10 @@ use yii\bootstrap\ActiveForm;
 
 
 /*  assets  */
-use app\assets\BasketAsset;
+use app\assets\CartAsset;
 use app\assets\BackAsset;
 
-BasketAsset::register($this);
+CartAsset::register($this);
 BackAsset::register($this);
 
 Yii::setAlias('@img', '@web/img/');
@@ -28,10 +28,16 @@ Yii::setAlias('@img', '@web/img/');
 <div class="wrap-basket">
     <!-- заголовок -->
     <div class="row">
-        <div class="col-md-2 col-md-offset-3 ">
-            <h1>Ваша корзина</h1>
+        <div class="col-md-5  ">
+            <h1 class="basket-header">Ваша корзина</h1>
         </div>
-        <div class="col-md-2 col-md-offset-2 ">
+
+    </div>
+    <div class="row">
+        <div class="col-md-6  ">
+            <h4 id="goods-name">Наименование</h4>
+        </div>
+        <div class="col-md-6  ">
             <h4 id="count-goods">Количество</h4>
         </div>
     </div>
@@ -58,19 +64,19 @@ Yii::setAlias('@img', '@web/img/');
                         )
                         ?>
                         <!-- иконка -->
-                        <div class="col-md-1 col-md-offset-3 ">
+                        <div class="col-md-1 col-xs-1  basket-icon">
                             <?= Html::img($item['product']->image,
                                 ['class' => 'door-icon', 'alt' => "door icon"]) ?>
                         </div>
                         <!-- описание-->
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-3  basket-describ">
             <span class="description">
              <?= $item['product']->title ?>
             </span>
 
                         </div>
                         <!-- счетик? пределать в Yii2 widget -->
-                        <div class="col-md-1 button-area">
+                        <div class="col-md-1 col-xs-1  button-area">
 
                             <?=
                             $form->field($modelOrder->
@@ -85,7 +91,7 @@ Yii::setAlias('@img', '@web/img/');
 
                         </div>
                         <!-- удаление из корзины текущего товара-->
-                        <div class="col-md-1 delete-area">
+                        <div class="col-md-1 col-xs-1  delete-area">
                             <a class="delete" href="#" onclick="delItem(event, 'cart', <?= $item['product']->id ?> )">Удалить</a>
                         </div>
                     </div>
@@ -93,7 +99,7 @@ Yii::setAlias('@img', '@web/img/');
             <?php endforeach; ?>
             <!-- разделитель -->
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 ">
+                <div class="col-md-6  ">
                     <hr/>
                 </div>
             </div>
@@ -101,7 +107,7 @@ Yii::setAlias('@img', '@web/img/');
 
             <!-- удаление из корзины всего товара-->
             <div class="row">
-                <div class="col-md-1 col-md-offset-3 delete-all-area">
+                <div class="col-md-1  delete-all-area">
                     <a class="delete" href="#" onclick=clearCart("cart")>
                         Очистить корзину
                     </a>
@@ -109,7 +115,7 @@ Yii::setAlias('@img', '@web/img/');
 
 
 
-                <div class="col-md-1 col-md-offset-3 delete-all-area">
+                <div class="col-md-1 form-area">
                     <?= $form->field($modelOrder, 'customer')->textInput(['maxlength' => true]) ?>
                     <?= $form->field($modelOrder, 'phone')->textInput(['maxlength' => true]) ?>
                     <?= $form->field($modelOrder, 'email')->textInput(['type' => 'email']) ?>

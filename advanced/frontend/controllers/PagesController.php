@@ -155,22 +155,22 @@ class PagesController extends Controller
         $QuestionForm = new QuestionForm();
         return $this->render('12_Kontakti',['questionForm' => $QuestionForm]);
     }
-    public function actionWishlist()
-    {
-        $QuestionForm = new QuestionForm();
-        return $this->render('13_Wishlist',['questionForm' => $QuestionForm]);
-    }
-    public function actionBasket()
-    {
-        
-
-        $QuestionForm = new QuestionForm();
-        return $this->render('14_Korzina',
-            [
-                'questionForm' => $QuestionForm,
-                'model' => $model,
-            ]);
-    }    
+//    public function actionWishlist()
+//    {
+//        $QuestionForm = new QuestionForm();
+//        return $this->render('13_Wishlist',['questionForm' => $QuestionForm]);
+//    }
+//    public function actionBasket()
+//    {
+//
+//
+//        $QuestionForm = new QuestionForm();
+//        return $this->render('14_Korzina',
+//            [
+//                'questionForm' => $QuestionForm,
+//                'model' => $model,
+//            ]);
+//    }
 
 //тест
     public function actionAdd_manufacturers_in_db()

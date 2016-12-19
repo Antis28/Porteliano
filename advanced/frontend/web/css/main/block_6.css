@@ -24,61 +24,8 @@
     left: 12px;
     top: 10px;
 }
-.tile{
-    min-height: 470px;
-}
-.link-tile{
-    min-height: 342px;
-    display: block;
-}
-.wrap-doors .tile {
-    padding-left: 0;
-    padding-right: 0;
+.tab-content{
     margin-top: 30px;
-    text-align: center;
-    display: inline-block;
-
-    padding-top: 5px;
-    width: 230px;
-    margin-left: 13px;
-
-    border: 1px solid #e8e8e8;
-}
-
-.wrap-doors .tile:hover {
-    box-shadow: 0px 0px 21px 7px #dcd7be;
-}
-
-.wrap-doors .tile-img {
-    margin-top: 7px;
-    max-height: 342px;
-    margin-left: auto;
-    margin-right: auto;
-
-    max-width: 220px;
-    height: 342px;
-}
-
-/*-inner-doors*/
-.wrap-doors .info > .delimiter {
-    height: 2px;
-    width: 100%;
-    background-color: white;
-    margin-top: 9px;
-}
-
-.wrap-doors .info {
-    margin-top: 5%;
-    background-color: #ece7d4;
-}
-
-.wrap-doors .info p {
-    text-align: left;
-    margin-left: 5%;
-}
-
-.wrap-doors .info p:first-child {
-    padding-top: 5%;
 }
 
 .wrap-doors .doors-h2 {
@@ -90,7 +37,7 @@
 }
 
 .wrap-doors .running-ribbon-doors div.view {
-    height: 600px;
+    height: 543px;
     width: 96%;
 
 }
@@ -110,16 +57,6 @@
     margin-top: 5px;
     font-family: 'PTSerifBold', serif;
     font-size: 18px;
-}
-
-.wrap-doors .block-price-count > a {
-    color: #4e3d36;
-}
-
-.wrap-doors .add-to-wish {
-    font-size: 16px;
-    margin-left: 100px;
-    color: #4e3d36;
 }
 
 /*******************************************************************/

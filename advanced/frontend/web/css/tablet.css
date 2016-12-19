@@ -199,7 +199,21 @@
 	}
 }
 
+.wrap-wishlist, .wrap-basket{
+	min-height:302px;
+}
 
+.wrap-wishlist > .row,
+.wrap-basket > .row{
+	width:100%;
+}
+
+.wrap-delivery > .center-block,
+.wrap-delivery > .center-block > div{
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
 
 @media (min-width:768px) and (max-width:980px){
 	header{
@@ -1587,5 +1601,181 @@
 		position:relative;
 		top:-570px;
 		left:calc(100% - 398px);
+	}
+
+	/*Избранное, Корзина*/
+
+	.wrap-wishlist, .wrap-basket{
+		min-height:330px;
+		padding-bottom:337px;
+	}
+
+	.wrap-wishlist > .row:first-child,
+	.wrap-basket > .row:first-child{
+		width:700px;
+		margin:0px auto;
+	}
+
+	.wrap-wishlist > .row:last-child{
+		display:none;
+	}
+
+	.wrap-wishlist > .goods-row{
+		width:740px;
+		margin:0px auto;
+		background-color:#fff;
+		margin-bottom:10px;
+	}
+
+	.wrap-wishlist > .goods-row > div{
+		margin:0px;
+		padding:0px;
+		float:left;
+	}
+
+	.wrap-wishlist > .goods-row > div{
+		margin:20px;
+	}
+
+	.wrap-wishlist > .goods-row > div:last-child{
+		float:right;
+	}
+
+	.wrap-wishlist > .row:first-child > div,
+	.wrap-basket > .row:first-child > div{
+		margin:0px;
+		padding:0px;
+		width:50%;
+		float:left;
+	}
+
+	.wrap-wishlist > .row:first-child > div:last-child > h4,
+	.wrap-basket > .row:first-child > div:last-child > h4{
+		text-align:right;
+	}
+
+	.wrap-wishlist > h2,
+	.wrap-basket > #tab-cart > h2{
+		text-align:center;
+	}
+
+	/*Перегородки*/
+
+	.wrap.septa.switch{
+		min-height:950px;
+		margin-top:20px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:first-child > div,
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:first-child > div > h2{
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2){
+		margin-top:30px;
+		height:350px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:last-child > div{
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div{
+		margin:0px;
+		padding:0px;
+		height:350px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div{
+		float:left;
+		height:350px;
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:first-child,
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:last-child,
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:last-child img,
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:first-child img{
+		width:170px;
+		height:350px;
+		outline:none;
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:first-child img,
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:last-child img,
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:nth-child(2) img{
+		border:6px solid #935347;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:first-child .gradient-pos,
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:last-child .gradient-pos{
+		width:160px;
+		top:47%;
+		left:5px;
+		margin-top:5px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:nth-child(2) .gradient-pos{
+		width:330px;
+		top:47%;
+		left:5px;
+		margin-top:5px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:first-child{
+		margin-right: 10px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:last-child{
+		margin-left:10px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:nth-child(2){
+		width:340px;
+		height:350px;
+	}
+
+	.row:nth-child(2) > div > div:nth-child(2) img{
+		width:340px;
+		height:350px;
+		outline:none;
+		margin:0px;
+		padding:0px;
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div:first-child .cover-text{
+		
+	}
+
+	.wrap.septa.switch > .septa-container > .wrap-tiles > 
+	.row:nth-child(2) > div > div .cover-text{
+		top:84%;
+		text-transform:uppercase;
+		font-size:18px;
 	}
 }

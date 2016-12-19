@@ -303,3 +303,12 @@ body {
         width: 100%;
     }
 }
+
+.img-holder {
+    margin: 0;
+    height: 1000px;
+    position:absolute;
+    top:0px;left:0px;
+    width:100%;
+    background: url(../../img/background/FOTO_INTRO_01.jpg) no-repeat fixed 0 50%;
+}

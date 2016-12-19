@@ -2,12 +2,12 @@
  * Created by dmitrij on 24.11.2016.
  */
 
-
+var semaphore = false;
 
 (function ($) {
 
-    $(".add-to-cart").on('click', addToCart);
-    $(".add-to-wish").on('click', addToWish);
+    //$(".add-to-cart").on('click', addToCart);
+    //$(".add-to-wish").on('click', addToWish);
 
     var jCart = $("#basket");
     var jWish = $('#wishlist');
@@ -28,7 +28,78 @@
     //     delItem('wish', $(this).data('id'));
     //
     // })
+    semaphore = false;
 })(jQuery);
+
+function getCurrentSection(novetly) {
+
+    var section = novetly.data("section");
+
+    if (section)
+        return section;
+    else
+        return '2'; //перегородки
+}
+
+function getCurrentElements(novetly) {
+    var currentId = {};
+    var elements = novetly.children();
+    for (i = 0 ; i < elements.length; i++) {
+        currentId[i] = elements.eq(i).data('id');
+    }
+    return currentId;
+
+}
+
+function nextDownload(e,left, quant) {
+
+    e.preventDefault();
+    if (semaphore) return;
+
+    semaphore = true;
+    var currentButton = $(e.target);
+
+    var novetly = currentButton.parent().siblings(".novelty-folders").find(".ribbon-ul");
+    var active = currentButton.parent().siblings(".novelty-folders").find(".active > > > .ribbon-ul  ");
+    novetly = (active.length > 0)? active : novetly;
+
+    var giveMore = $(".catalog-elements");
+    novetly = (giveMore.length > 0) ? giveMore : novetly;
+
+    var section = getCurrentSection(novetly);
+    var elements = getCurrentElements(novetly);
+
+    var dataAjax = {section: section,
+        elements: elements,
+        quant: quant
+    };
+
+    if (giveMore.length > 0) {
+        dataAjax.material = $("div .material").find(".btn-default").data('id');
+        dataAjax.manufacturer = $("div .manufacturer").find(".btn-default").data('id');
+        dataAjax.style = $("div .style").find(".btn-default").data('id');
+        dataAjax.price = $("div .block-1-price").find(".btn-default").data('id');
+        dataAjax.section = $(".section-title").data('id');
+    }
+
+    $.ajax({
+        url: '/catalog/download',
+        data: dataAjax,
+        type: 'POST',
+        success: function (res) {
+            if (left)
+                novetly.prepend(res);
+            else
+                novetly.append(res);
+            semaphore = false;
+        },
+        error: function () {
+            console.log('error downloading');
+            semaphore = false;
+        }
+    });
+
+}
 
 function delItem(e, cartWish, id) {
 
@@ -124,6 +195,8 @@ function addToCart(e) {
             success: function (res) {
                 callbackQuantity(res, jtag);
                 callbackQuantity(res, tCart);
+
+
                 //getCart('cart');
 
             },
@@ -179,6 +252,7 @@ function addToWish(e) {
             success: function (res) {
                 callbackQuantity(res, jtag);
                 callbackQuantity(res, tWish);
+                setGlyphiconHeart($(e.target), 1);
                 //getCart('wish');
             },
             error: function () {

@@ -23,8 +23,8 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
 <div class="wrap-about switch" data-swith="about">
     <div class="limited-block">
         <div class="row">
-            <div class="col-md-3 .col-sm-3 col-xs-12 ">
-                <h1>О компании</h1>
+            <div class="col-md-4 .col-sm-3 col-xs-12 ">
+                <h1 class="about-header">О компании</h1>
             </div>
         </div>
         <div class="row">

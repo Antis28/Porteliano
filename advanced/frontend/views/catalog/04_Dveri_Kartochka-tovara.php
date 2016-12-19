@@ -40,8 +40,8 @@ switch ($product->section->id) {
         $coverTextLeft = 'Входные двери';
         $coverTextRight = 'Ручки';
 
-        $coverLinkLeft = Url::to(['catalog/', 'ind' => '4']);
-        $coverLinkRight = Url::to(['catalog/', 'ind' => '5']);
+        $coverLinkLeft = Url::to(['catalog/', 'section' => '4']);
+        $coverLinkRight = Url::to(['catalog/', 'section' => '5']);
         break;
     case 4:
         $categoryTitle = 'Входные двери';
@@ -51,8 +51,8 @@ switch ($product->section->id) {
         $coverTextLeft = 'Ручки';
         $coverTextRight = 'Межкомнатные двери';
 
-        $coverLinkLeft = Url::to(['catalog/', 'ind' => '5']);
-        $coverLinkRight = Url::to(['catalog/', 'ind' => '3']);
+        $coverLinkLeft = Url::to(['catalog/', 'section' => '5']);
+        $coverLinkRight = Url::to(['catalog/', 'section' => '3']);
         break;
     case 5:
         $categoryTitle = 'Ручки';
@@ -62,8 +62,8 @@ switch ($product->section->id) {
         $coverTextLeft = 'Входные двери';
         $coverTextRight = 'Межкомнатные двери';
 
-        $coverLinkLeft = Url::to(['catalog/', 'ind' => '4']);
-        $coverLinkRight = Url::to(['catalog/', 'ind' => '3']);
+        $coverLinkLeft = Url::to(['catalog/', 'section' => '4']);
+        $coverLinkRight = Url::to(['catalog/', 'section' => '3']);
         break;
     default:
         $categoryTitle = 'нет категории';
@@ -74,20 +74,20 @@ switch ($product->section->id) {
         $coverTextLeft = 'Входные двери';
         $coverTextRight = 'Ручки';
 
-        $coverLinkLeft = Url::to(['catalog/', 'ind' => '4']);
-        $coverLinkRight = Url::to(['catalog/', 'ind' => '5']);
+        $coverLinkLeft = Url::to(['catalog/', 'section' => '4']);
+        $coverLinkRight = Url::to(['catalog/', 'section' => '5']);
 }
 
 // в хлебные крошки 2 ссылки
 $this->params['breadcrumbs'][] = [
     'label' => 'Двери ',
-    'url' => Url::to(['pages/dveri']),
+    'url' => Url::to(['/catalog','section' => '1']),
     'template' => "<li><ins>{link}</ins></li>\n", // template for this link only
 ];
 
 $this->params['breadcrumbs'][] = [
     'label' => $categoryTitle,    //'Межкомнтаные двери ',
-    'url' => Url::to(['pages/doorcatalog']),
+    'url' => Url::to(['/catalog','section' => '3']),
     'template' => "<li> {link} </li>\n",
 ];
 
