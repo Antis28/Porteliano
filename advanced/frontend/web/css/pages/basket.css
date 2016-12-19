@@ -1,3 +1,8 @@
+.wrap-basket{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .door-icon{
     height: 110px;
     border: 1px solid #ece7d4;
@@ -52,5 +57,18 @@
 .send-button:hover,.basket-button:active{
     background-color: #6a372d;
     color: #ffffff;
+
+}
+.basket-describ{
+    max-width: 780px;
+    width: 650px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.wrap-basket .button-area{
+    float: left;
+
+    width: 100px;
+    margin-top: 23px;
 
 }
