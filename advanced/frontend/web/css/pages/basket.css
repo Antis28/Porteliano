@@ -117,3 +117,19 @@
     float: right;
     margin-right: 200px;
 }
+/****************** Mobile *************************************/
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .wrap-basket{
+        width: 460px;
+    }
+    .basket-describ{
+        width: 250px;
+    }
+    .description{
+        line-height: normal;
+    }
+    .basket-icon {
+        margin-right: 55px;
+    }
+
+}

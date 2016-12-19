@@ -64,19 +64,19 @@ Yii::setAlias('@img', '@web/img/');
                         )
                         ?>
                         <!-- иконка -->
-                        <div class="col-md-1  basket-icon">
+                        <div class="col-md-1 col-xs-1  basket-icon">
                             <?= Html::img($item['product']->image,
                                 ['class' => 'door-icon', 'alt' => "door icon"]) ?>
                         </div>
                         <!-- описание-->
-                        <div class="col-md-3 basket-describ">
+                        <div class="col-md-3 col-xs-3  basket-describ">
             <span class="description">
              <?= $item['product']->title ?>
             </span>
 
                         </div>
                         <!-- счетик? пределать в Yii2 widget -->
-                        <div class="col-md-1 button-area">
+                        <div class="col-md-1 col-xs-1  button-area">
 
                             <?=
                             $form->field($modelOrder->
@@ -91,7 +91,7 @@ Yii::setAlias('@img', '@web/img/');
 
                         </div>
                         <!-- удаление из корзины текущего товара-->
-                        <div class="col-md-1 delete-area">
+                        <div class="col-md-1 col-xs-1  delete-area">
                             <a class="delete" href="#" onclick="delItem(event, 'cart', <?= $item['product']->id ?> )">Удалить</a>
                         </div>
                     </div>
