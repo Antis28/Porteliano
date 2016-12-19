@@ -3,22 +3,27 @@
     font-style: normal;
     font-family: "PT Sans", serif;
     font-size: 18px;
+    min-height: 302px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-.wrap-wishlist .wishlist-header{
+ .wishlist-header{
     font-family: Copperplate, serif;
     font-size: 40px;
     font-weight: normal;
     font-style: normal;
 }
-.wrap-wishlist .delete:hover,
-.wrap-wishlist .delete{
+ .delete:hover,
+ .delete{
     color: #935347;
     text-decoration: underline;
 }
-.wrap-wishlist .counter-goods,
-.wrap-wishlist .word-product,
-.wrap-wishlist .count-goods{
+ .counter-goods,
+ .word-product,
+ .count-goods{
     font-weight: normal;
     font-style: normal;
     font-family: "PT Sans", serif;
@@ -26,13 +31,7 @@
     color: #413332;
 }
 
-.wrap-wishlist {
-    min-height: 302px;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.wrap-wishlist .wishlist-icon{
+ .wishlist-icon{
     max-height: 120px;
     max-width: 72px;
     margin-right: 64px;
@@ -45,15 +44,47 @@
     padding-left: 0;
     padding-right: 0;
 }
-.wrap-wishlist .button-area{
+ .button-area{
     padding-left: 0;
     padding-right: 0;
     float: right;
 }
-.wrap-wishlist .door-icon{
+ .door-icon{
     margin-left: auto;
     margin-right: auto;
 }
-.wrap-wishlist #count-goods {
+ #count-goods {
     float: right;
+}
+/****************** Mobile *************************************/
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .wrap-wishlist{
+        max-width: 460px;
+    }
+    .wrap-wishlist .wishlist-header{
+        margin-top: 50px;
+    }
+    .wrap-wishlist .wishlist-icon{
+        max-height: 120px;
+        max-width: 72px;
+
+    }
+    .wrap-wishlist .wishlist-descript{
+        max-width: 210px;
+        width: 210px;
+    }
+    .wrap-wishlist .button-area{margin-right: 23px;}
+    .wrap-wishlist .door-icon{
+        max-width: 70px;
+        margin-right: 17px;
+    }
+    .wrap-wishlist .description{
+        line-height: normal;
+    }
+    #count-goods{
+        margin-top: 60px;
+    }
+    .circle-number {
+        padding-left: 6px;
+    }
 }
