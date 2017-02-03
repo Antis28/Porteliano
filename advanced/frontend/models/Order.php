@@ -41,7 +41,7 @@ class Order extends \yii\db\ActiveRecord
             [['date', 'done', 'term'], 'safe'],
             [['full_name'], 'string', 'max' => 100],
             ['email','email'],
-            [['phone'], 'string', 'max' => 100],
+            [['phone'],'match' ,'pattern' => '/^(?:0{1,2}|\+)[\d]{2,4}-?[\d\-]{7}$/gm'],
             [['customer'],'string', 'max' => 100],
             //[['full_name'], 'exist', 'skipOnError' => true, 'targetClass' => Customer::className(), 'targetAttribute' => ['full_name' => 'full_name']],
         ];

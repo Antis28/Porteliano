@@ -209,3 +209,15 @@
     color: #3c2f26;
     font-size: 16px;
 }
+/*дополнителные стили*/
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+    background-color: #e4e2db;
+}
+.category button{
+    background: none;
+    color: #000;
+    text-decoration: none;
+    font-family: GothamPro, serif;
+    font-size: 20px;
+    border:none;
+}

@@ -32,7 +32,7 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
                 </div>
                 <div class="row indent">
                     <div class="col-md-12 .col-sm-12 col-xs-12">
-                        +7 (495) 742-17-24
+                        +5(555) 555-55-55
                     </div>
                 </div>
                 <div class="row orange">
@@ -42,7 +42,7 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
                 </div>
                 <div class="row indent">
                     <div class="col-md-12 .col-sm-12 col-xs-12">
-                        +7 (495) 123-65-56
+                        +5(555) 555-55-55
                     </div>
                 </div>
                 <div class="row orange">
@@ -52,7 +52,7 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
                 </div>
                 <div class="row ">
                     <div class="col-md-12 .col-sm-12 col-xs-12 address">
-                        Москва, 3-й Донской проезд, дом 1,
+                        Москва, Арбатская улица,1,
                     </div>
                 </div>
                 <div class="row indent">
@@ -67,7 +67,7 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
                 </div>
                 <div class="row indent">
                     <div class="col-md-12 .col-sm-12 col-xs-12">
-                        absolute@ak-in.ru
+                        mail@mail.ru
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@ Yii::setAlias('@imgBigLogos', '@web/img/catalog/logos/big');
     <div class="map">
 
         <script type="text/javascript" charset="utf-8" async
-                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-zt7pyu1ot07ORrKltN3hhhNxShJKgs-&amp;width=-1&amp;height=800&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-zt7pyu1ot07ORrKltN3hhhNxShJKgs-&amp;width=-1&amp;height=800&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false">
         </script>
         <div class="forma">
             <?// require Yii::getAlias('@frontend') . '/views/site/home/contact-form.php' ?>

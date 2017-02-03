@@ -249,13 +249,15 @@ span.btn > a {
     display: flex;
     /* направление потока
         элементы переносились на новую строку*/
-    flex-flow: column wrap;
+    // flex-flow: column wrap;
     /* Теперь определим, как будет распределяться пространство*/
     justify-content: center;
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
     color: black;
+    border: 2px solid #935347;
+    padding: 20px 0;
 }
 
 .glyphicon-plus-sign + div {
@@ -518,6 +520,18 @@ ul.breadcrumb {
 
 }
 /*дополнительные стили*/
+.plus{
+    font-size: 40px;
+    font-weight: lighter;
+    border: 1px solid #95564b;
+    border-radius: 80px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #95564b;
+    margin-right: 15px;
+}
 @media (max-width: 479px) and (min-width: 320px){
     .flex-container{
         min-width: 300px;

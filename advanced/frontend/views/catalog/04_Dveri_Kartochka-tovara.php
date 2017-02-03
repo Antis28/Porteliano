@@ -111,7 +111,8 @@ foreach ($sections->getMenu() as $section) {
             <div class="product-discript-door col-md-7 ">
                 <div class="row ">
                     <div class="col-md-10 col-xs-11 door-title">
-                        <h1 class="product-title"><?= (isset($product->section)) ? $product->section->title : '' ?></h1>
+                        <h1 class="product-title"><?= (isset($product->section)) ? $product->section->title_product . ' ' .
+                                $product->title : '' ?></h1>
                     </div>
                 </div>
                 <!--Производитель-->

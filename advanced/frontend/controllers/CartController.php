@@ -103,7 +103,6 @@ class CartController extends Controller
 
             $session = Yii::$app->session;
             $session->open();
-            var_dump($session[$cartWish]);
             $session[$cartWish]->clear();
             $this->layout = true;
 

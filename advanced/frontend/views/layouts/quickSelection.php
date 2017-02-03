@@ -25,10 +25,10 @@ $items = \yii\helpers\ArrayHelper::toArray($sections->getMenu());
         <div class="row center-block">
             <div style="display: flex" class="col-sm-12">
                 <div class="dropdown category category-2">
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle" ">
+                    <button href="#" data-toggle="dropdown" class="dropdown-toggle" ">
                         Выберите категорию
                         <b class="caret"></b>
-                    </a>
+                    </button>
                     <?php
 //                    echo Dropdown::widget([
 //                        'items' => $items,

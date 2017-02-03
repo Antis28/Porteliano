@@ -55,13 +55,13 @@ MobileAsset::register($this);
                     <div class="col-md-offset-1 col-md-6 col-sm-4 col-sm-offset-2 col-xs-offset-1 col-xs-7">
                         <div class="row">
                             <section class="hidden-xs col-md-6  col-sm-12 site-contact font-PTSans">
-                                <div id="phone_1">+7(495) 742-17-24</div>
+                                <div id="phone_1">+5(555) 555-55-55</div>
                                 <div id="phone_1_label">Многоканальный телефон</div>
                             </section>
                             <section class="col-md-6 col-sm-12">
-                                <div id="phone_2">+7(495) 123-65-56</div>
+                                <div id="phone_2">+5(555) 555-55-55</div>
                                 <a class="hidden-xs email-nonactive"
-                                   href="mailto:absolute@ak-in.ru">absolute@ak-in.ru</a>
+                                   href="mailto:mail@mail.ru">mail@mail.ru</a>
                             </section>
                         </div>
                     </div>
