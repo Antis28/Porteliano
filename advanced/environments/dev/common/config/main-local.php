@@ -20,7 +20,7 @@ return [
                 'class' => 'Swift_SmtpTransport',
                 'host' => 'smtp.mail.ru',
                 'username' => 'porteliano@mail.ru',
-                'password' => 'GjhntkbfyjDoors777',
+                'password' => 'mailporteliano',
                 'port' => '467',
                 'encryption' => 'ssl',
             ],

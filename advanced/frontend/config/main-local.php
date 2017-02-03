@@ -18,7 +18,7 @@ $config = [
                 'class' => 'Swift_SmtpTransport',
                 'host' => 'smtp.mail.ru',
                 'username' => 'porteliano@mail.ru',
-                'password' => 'GjhntkbfyjDoors777',
+                'password' => 'mailporteliano',
                 'port' => '587',
                 'encryption' => 'tls',
             ],
